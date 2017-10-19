@@ -2,8 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./css/index.css">
     <title>My Cloud IFTTT</title>
@@ -254,109 +253,85 @@
     </script>
 </head>
 <body>
-<main class="g-layout">
-    <section class="g-container">
-        <div class="g-content">
-            <a class="mycloud-logo-text mobile">
-                <script language="javascript">
-                  setLocale(); document.write(localizedStrings.myCloudServices)
-                </script>
-                  </a>
-            <div class="mycloud-logo-container">
-                <img class="mycloud-logo" src="./images/logo.svg" alt="My Cloud Logo">
-            </div>
-            <div class="ifttt-logo-container">
-                <a href="#">
-                    <img class="ifttt-logo" src="./images/IFTTT.svg" alt="My Cloud Logo">
+    <main class="g-layout">
+        <section class="g-container">
+            <div class="g-content">
+                <a class="mycloud-logo-text mobile">
+                    <script language="javascript">
+                      setLocale(); document.write(localizedStrings.myCloudServices)
+                    </script>
                 </a>
-            </div>
-            <h1 class="header"><script language="javascript">document.write(localizedStrings.title)</script></h1>
-            <p class="content"><script language="javascript">document.write(localizedStrings.messagePart1)</script></p>
-            <p class="content"><script language="javascript">document.write(localizedStrings.messagePart2)</script></p>
-            <div class="button-container mobile tablet">
-                <a id="connectButton mobile" class="btn btn-primary" href="https://ifttt.com/mycloud" title="My Cloud IFTTT connect button"><script language="javascript">document.write(localizedStrings.connect)</script></a>
-            </div>
-            <!--<div class="test-containers">-->
-                <!--<div class="test-container fb">-->
-                    <!--<h4>-->
-                        <!--<script language="javascript">document.write(localizedStrings.saveNew)</script>-->
-                        <!--<span class="bold">-->
-                                <!--<script language="javascript">document.write(localizedStrings.gmailMsg)</script>-->
-                            <!--</span>-->
-                    <!--</h4>-->
-                    <!--<img class="container-logo" src="./images/gmail.svg" />-->
-                    <!--<img class="container-background" src="./images/gmail_image.png" />-->
-                <!--</div>-->
-                <!--<div class="test-container gmail">-->
-                    <!--<div class="test-container-wrapper">-->
-                        <!--<h4>-->
-                            <!--<script language="javascript">document.write(localizedStrings.saveNew)</script>-->
-                            <!--<span class="bold">-->
-                                    <!--<script language="javascript">document.write(localizedStrings.gmailMsg)</script>-->
-                                <!--</span>-->
-                        <!--</h4>-->
-                        <!--<img class="container-logo" src="./images/gmail.svg" />-->
-                        <!--<img class="container-background" src="./images/gmail_image.png" />-->
-                    <!--</div>-->
-                <!--</div>-->
-            <!--</div>-->
-            <div class="social-containers">
-                <div class="social-container gmail">
-                    <div class="social-container-content-wrapper">
-                        <h4>
-                            <script language="javascript">document.write(localizedStrings.saveNew)</script>
-                            <span class="bold">
-                                <script language="javascript">document.write(localizedStrings.gmailMsg)</script>
-                            </span>
-                        </h4>
-                        <img class="container-logo" src="./images/gmail.svg" />
-                        <img class="container-background" src="./images/gmail_image.png" />
+                <div class="mycloud-logo-container">
+                    <img class="mycloud-logo" src="./images/logo.svg" alt="My Cloud Logo">
+                </div>
+                <div class="ifttt-logo-container">
+                    <a href="#">
+                        <img class="ifttt-logo" src="./images/IFTTT.svg" alt="IFTTT Logo">
+                    </a>
+                </div>
+                <h1 class="header"><script language="javascript">document.write(localizedStrings.title)</script></h1>
+                <p class="content"><script language="javascript">document.write(localizedStrings.messagePart1)</script></p>
+                <p class="content"><script language="javascript">document.write(localizedStrings.messagePart2)</script></p>
+                <div class="button-container mobile tablet">
+                    <a id="connectButton" class="btn btn-primary" href="https://ifttt.com/mycloud" title="My Cloud IFTTT connect button"><script language="javascript">document.write(localizedStrings.connect)</script></a>
+                </div>
+                <div class="social-containers">
+                    <div class="social-container gmail">
+                        <div class="social-container-content-wrapper">
+                            <h4>
+                                <script language="javascript">document.write(localizedStrings.saveNew)</script>
+                                <span class="bold">
+                                    <script language="javascript">document.write(localizedStrings.gmailMsg)</script>
+                                </span>
+                            </h4>
+                            <img class="container-logo" src="./images/gmail.svg" alt="gmail" />
+                            <img class="container-background" src="./images/gmail_image.png" alt="gmail background" />
+                        </div>
+                    </div>
+                    <div class="social-container fb">
+                        <div class="social-container-content-wrapper">
+                            <h4>
+                                <script language="javascript">document.write(localizedStrings.saveNew)</script>
+                                <script language="javascript">document.write(localizedStrings.tagged)</script>
+                                <span class="bold">
+                                    <script language="javascript">document.write(localizedStrings.fbMsg)</script>
+                                </span>
+                            </h4>
+                            <img class="container-logo" src="./images/facebook.svg" alt="facebook" />
+                            <img class="container-background" src="./images/facebook_image.png" alt="facebook background" />
+                        </div>
+                    </div>
+                    <div class="social-container instagram">
+                        <div class="social-container-content-wrapper">
+                            <h4>
+                                <script language="javascript">document.write(localizedStrings.saveNew)</script>
+                                <span class="bold">
+                                    <script language="javascript">document.write(localizedStrings.instaMsg)</script>
+                                </span>
+                            </h4>
+                            <img class="container-logo" src="./images/instagram.svg" alt="instagram" />
+                            <img class="container-background" src="./images/instagram_image.png" alt="instagram background" />
+                        </div>
+                    </div>
+                    <div class="social-container more">
+                        <div class="social-container-content-wrapper">
+                            <h4>
+                                <script language="javascript">document.write(localizedStrings.andSo)</script>
+                                <span class="bold">
+                                    <script language="javascript">document.write(localizedStrings.andMore)</script>
+                                </span>
+                            </h4>
+                            <img class="container-logo" src="./images/more.svg" alt="more image"/>
+                            <img class="container-background" src="./images/muchmore_image.png" alt="more background" />
+                        </div>
                     </div>
                 </div>
-                <div class="social-container fb">
-                    <div class="social-container-content-wrapper">
-                        <h4>
-                            <script language="javascript">document.write(localizedStrings.saveNew)</script>
-                            <script language="javascript">document.write(localizedStrings.tagged)</script>
-                            <span class="bold">
-                                <script language="javascript">document.write(localizedStrings.fbMsg)</script>
-                            </span>
-                        </h4>
-                        <img class="container-logo" src="./images/facebook.svg" />
-                        <img class="container-background" src="./images/facebook_image.png" />
-                    </div>
+                <div class="button-container desktop">
+                    <a id="connectButton2" class="btn btn-primary" href="https://ifttt.com/mycloud" title="My Cloud IFTTT connect button"><script language="javascript">document.write(localizedStrings.connect)</script></a>
                 </div>
-                <div class="social-container instagram">
-                    <div class="social-container-content-wrapper">
-                        <h4>
-                            <script language="javascript">document.write(localizedStrings.saveNew)</script>
-                            <span class="bold">
-                                <script language="javascript">document.write(localizedStrings.instaMsg)</script>
-                            </span>
-                        </h4>
-                        <img class="container-logo" src="./images/instagram.svg" />
-                        <img class="container-background" src="./images/instagram_image.png" />
-                    </div>
-                </div>
-                <div class="social-container more">
-                    <div class="social-container-content-wrapper">
-                        <h4>
-                            <script language="javascript">document.write(localizedStrings.andSo)</script>
-                            <span class="bold">
-                                <script language="javascript">document.write(localizedStrings.andMore)</script>
-                            </span>
-                        </h4>
-                        <img class="container-logo" src="./images/more.svg" />
-                        <img class="container-background" src="./images/muchmore_image.png" />
-                    </div>
-                </div>
-            </div>
-            <div class="button-container desktop">
-                <a id="connectButton2" class="btn btn-primary" href="https://ifttt.com/mycloud" title="My Cloud IFTTT connect button"><script language="javascript">document.write(localizedStrings.connect)</script></a>
-            </div>
-          </div>
-    </section>
-</main>
+              </div>
+        </section>
+    </main>
 </body>
 </html>
 
