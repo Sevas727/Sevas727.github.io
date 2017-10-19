@@ -65,6 +65,10 @@ body {
     background: #fff;
 }
 
+.g-container {
+    padding-bottom: 60px;
+}
+
 .bold {
     font-weight: bold;
 }
@@ -240,7 +244,7 @@ body {
     }
 
     .social-container {
-        width: calc(50% - 2px);
+        width: calc(50% - 3px);
         padding-bottom: 36%;
     }
 
@@ -251,7 +255,6 @@ body {
     }
 
     .btn {
-        max-width: 100%;
         font-size: 16px;
     }
 
@@ -309,7 +312,7 @@ body {
 
     .social-container {
         width: 100%;
-        padding-bottom: 70%;
+        padding-bottom: 280px;
     }
 
     .ifttt-logo {
