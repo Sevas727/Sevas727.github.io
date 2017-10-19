@@ -1,0 +1,362 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/index.css">
+    <title>My Cloud IFTTT</title>
+
+    <script language="javascript">
+      window.onload = function() {
+        setLocale();
+      };
+      var localizedStrings = {};
+      var localeEnStrings = {
+        title: 'IFTTT Platform',
+        myCloudServices: 'My Cloud Services',
+        messagePart1: 'IFTTT is a free platform that helps you do more with all your apps and devices.',
+        messagePart2: 'By connecting your My Cloud Home device with your IFTTT account, you get the following features:',
+        gmailMsg: 'Gmail attachments',
+        tagged: 'tagged',
+        fbMsg: 'Facebook photos',
+        instaMsg: 'Instagram photos and videos',
+        andMore: 'much more…',
+        saveNew: 'Save new',
+        andSo: 'And so',
+        connect: 'Connect'
+      };
+      var localeFrStrings = {
+        message: 'IFTTT est une plateforme gratuite qui vous aide à tirer le meilleur parti de vos applications et appareils. Connecter votre appareil My Cloud Home à votre compte IFTTT vous donne accès aux fonctionnalités suivantes :',
+        gmailMsg: 'Sauvegarde des dernières pièces jointes Gmail',
+        fbMsg: 'Sauvegarde des dernières photos Facebook sur lesquelles vous êtes identifié',
+        instaMsg: 'Sauvegarde des dernières photos et vidéos Instagram',
+        andMore: 'Et plus encore...',
+        connect: 'Se connecter'
+      };
+      var localeESStrings = {
+        message: 'IFTTT es una plataforma gratuita que le ayuda a aprovechar al máximo sus aplicaciones y dispositivos. Al conectar su dispositivo My Cloud Home con su cuenta IFTTT, obtendrá las siguientes prestaciones:',
+        gmailMsg: 'Guardar nuevos documentos adjuntos de Gmail',
+        fbMsg: 'Guardar nuevas fotos de Facebook etiquetadas',
+        instaMsg: 'Guardar nuevas fotos y vídeos de Instagram',
+        andMore: 'Y mucho más...',
+        connect: 'Conectar'
+      };
+      var localeCSStrings = {
+        message: 'IFTTT je bezplatná platforma, která vám umožní lépe využívat všechny vaše aplikace a zařízení. Po připojení zařízení My Cloud Home pomocí účtu IFTTT získáte následující funkce:',
+        gmailMsg: 'Ukládání nových příloh z Gmailu',
+        fbMsg: 'Ukládání nových označených fotografií z Facebooku',
+        instaMsg: 'Ukládání nových fotografií a videí z Instagramu',
+        andMore: 'A mnoho dalšího...',
+        connect: 'Připojit'
+      };
+      var localeDaStrings = {
+        message: 'IFTTT er en gratis platform, der hjælper dig med at gøre mere med alle dine apps og enheder. Ved at forbinde din My Cloud Home-enhed med din IFTTT-konto, kan du få følgende funktioner:',
+        gmailMsg: 'Gem nye Gmail-vedhæftede filer',
+        fbMsg: 'Gem nye taggede Facebook-billeder',
+        instaMsg: 'Gem nye Instagram-billeder og -videoer',
+        andMore: 'Og meget mere…',
+        connect: 'Tilslut'
+      };
+      var localeDeStrings = {
+        message: 'IFTTT ist eine kostenlose Plattform mit praktischen Funktionen, die Sie mit allen Ihren Apps und Geräten nutzen können. Die folgenden Funktionen erhalten Sie, wenn Sie Ihr My Cloud Home-Gerät mit Ihrem IFTTT-Konto verknüpfen:',
+        gmailMsg: 'Neue Gmail-Anhänge speichern',
+        fbMsg: 'Neue getaggte Facebook-Fotos speichern',
+        instaMsg: 'Neue Instagram-Fotos und -Videos speichern',
+        andMore: 'Und vieles mehr!',
+        connect: 'Verbinden'
+      };
+      var localeElStrings = {
+        message: 'Η IFTTT είναι μια δωρεάν πλατφόρμα που σε βοηθάει να κάνεις περισσότερα με όλες τις εφαρμογές και τις συσκευές σου. Συνδέοντας την συσκευή σου My Cloud Home στον IFTTT λογαριασμό σου, θα έχεις τις παρακάτω δυνατότητες:',
+        gmailMsg: 'Αποθήκευσε τα νέα συνημμένα που λαμβάνεις στο Gmail',
+        fbMsg: 'Αποθήκευσε τις νέες φωτογραφίες στις οποίες σε έχουν προσθέσει με ετικέτα στο Facebook',
+        instaMsg: 'Αποθήκευσε νέες φωτογραφίες και βίντεο από το Instagram',
+        andMore: 'Και πολλά περισσότερα…',
+        connect: 'Σύνδεση'
+      };
+
+      var localeFiStrings = {
+        message: 'IFTTT on ilmainen alusta, jonka avulla voit tehdä entistä enemmän sovelluksillasi ja laitteillasi. Kun yhdistät My Cloud Home -laitteesi IFTTT-tiliisi, saat käyttöösi seuraavat ominaisuudet:',
+        gmailMsg: 'Tallenna uudet Gmail-liitteet',
+        fbMsg: 'Tallenna uudet merkityt Facebook-valokuvat',
+        instaMsg: 'Tallenna uudet Instagram-valokuvat ja -videot',
+        andMore: 'Ja paljon muuta...',
+        connect: 'Yhdistä'
+      };
+
+      var localeItStrings = {
+        message: 'IFTTT è una piattaforma gratuita che ti consente di utilizzare al meglio tutte le tue app e i tuoi dispositivi. Connetti il tuo dispositivo My Cloud Home all\'account IFTTT per poter usufruire delle seguenti funzionalità:',
+        gmailMsg: 'Salva gli ultimi allegati di Gmail',
+        fbMsg: 'Salva le ultime foto in cui ti hanno taggato su Facebook',
+        instaMsg: 'Salva le ultime foto e gli ultimi video di Instagram',
+        andMore: 'E molto altro ancora...',
+        connect: 'Connetti'
+      };
+
+      var localeJaStrings = {
+        message: 'IFTTTは、アプリやデバイスでさまざまな機能が利用できるようになる無料のプラットフォームです。WD Cloud HomeデバイスでIFTTTアカウントに接続すると、次の機能が利用できるようになります。',
+        gmailMsg: '新しいGmailの添付ファイルの保存',
+        fbMsg: '新しいタグ付けされたFacebookの写真の保存',
+        instaMsg: '新しいInstagramの写真とビデオの保存',
+        andMore: 'その他多数…',
+        connect: '接続'
+      };
+
+      var localeKoStrings = {
+        message: 'IFTTT는 모든 앱과 장치에서 더 많은 일을 할 수 있게 해주는 무료 플랫폼입니다. My Cloud Home 장치를 IFTTT 계정에 연결하면 다음과 같은 기능을 사용할 수 있습니다.',
+        gmailMsg: 'Gmail 첨부 파일 저장',
+        fbMsg: '내가 태그된 Facebook 사진 저장',
+        instaMsg: 'Instagram의 사진 및 비디오 저장',
+        andMore: '이 외에도 다양한 기능을 사용할 수 있습니다.',
+        connect: '연결'
+      };
+
+      var localeNbStrings = {
+        message: 'IFTTT er en gratis plattform som hjelper deg med å gjøre mer med alle dine apper og enheter. Du får følgende funksjoner ved å koble din My Cloud Home-enhet til med IFTTT-kontoen din:',
+        gmailMsg: 'Lagre nye Gmail-vedlegg',
+        fbMsg: 'Lagre nye merkede Facebook-bilder',
+        instaMsg: 'Lagre nye bilder og videoer fra Instagram',
+        andMore: 'Og mye mer ...',
+        connect: 'Koble til'
+      };
+
+      var localeNlStrings = {
+        message: 'IFTTT is een gratis platform dat u helpt meer gedaan te krijgen met al uw apps en apparaten. Door uw My Cloud Home-apparaat te koppelen aan uw IFTTT-account, krijgt u toegang tot de volgende functies:',
+        gmailMsg: 'Opslaan van nieuwe Gmail-bijlagen',
+        fbMsg: 'Opslaan van nieuwe getagde Facebook-foto\'s',
+        instaMsg: 'Opslaan van nieuwe Instagram-foto\'s en -video\'s',
+        andMore: 'En nog veel meer...',
+        connect: 'Contact maken'
+      };
+
+      var localePlStrings = {
+        message: 'IFTTT to darmowa platforma, która pomaga w rozszerzeniu funkcjonalności aplikacji i urządzeń. Połączenie urządzenia My Cloud Home z Twoim kontem IFTTT umożliwi korzystanie z następujących funkcji:',
+        gmailMsg: 'Zapisywanie nowych załączników z serwisu Gmail',
+        fbMsg: 'Zapisywanie nowych otagowanych zdjęć z Facebooka',
+        instaMsg: 'Zapisywanie nowych zdjęć i filmów z Instagrama',
+        andMore: 'I wiele więcej...',
+        connect: 'Połącz'
+      };
+
+      var localePtStrings = {
+        message: 'IFTTT é uma plataforma gratuita que ajuda a fazer mais com todos os seus aplicativos e dispositivos. Ao conectar seu dispositivo My Cloud Home com sua conta IFTTT, você obtém os seguintes recursos:',
+        gmailMsg: 'Salvar novos anexos do Gmail',
+        fbMsg: 'Salvar novas fotos marcadas do Facebook',
+        instaMsg: 'Salvar novas fotos e vídeos do Instagram',
+        andMore: 'e muito mais...',
+        connect: 'Conectar'
+      };
+
+      var localeRuStrings = {
+        message: 'IFTTT — это бесплатная платформа, которая расширяет возможности использования всех ваших приложений и устройств. После подключения устройства My Cloud Home к учетной записи IFTTT вам становятся доступны следующие возможности:',
+        gmailMsg: 'сохранение новых вложений Gmail;',
+        fbMsg: 'сохранение новых фотографий с метками в Facebook;',
+        instaMsg: 'сохранение новых фотографий и видео в Instagram.',
+        andMore: 'И многое другое...',
+        connect: 'Подключиться'
+      };
+
+      var localeSkStrings = {
+        message: 'IFTTT je bezplatná platforma, ktorá vám umožní intenzívnejšie využívať všetky vaše aplikácie a zariadenia. Pripojením vášho zariadenia My Cloud Home k účtu IFTTT získate nasledujúce funkcie:',
+        gmailMsg: 'Možnosť uložiť nové prílohy z Gmailu',
+        fbMsg: 'Možnosť uložiť nové označené fotky z Facebooku',
+        instaMsg: 'Možnosť uložiť nové fotky a videá z Instagramu',
+        andMore: 'A oveľa viac…',
+        connect: 'Pripojiť'
+      };
+
+      var localeSvStrings = {
+        message: 'IFTTT är en gratis plattform som hjälper dig göra mer med alla dina appar och enheter. Genom att ansluta din My Cloud-enhet som du använder hemma med ditt IFTTT-konto får du följande funktioner:',
+        gmailMsg: 'Spara nya Gmail-bilagor',
+        fbMsg: 'Spara nya, taggade Facebook-bilder',
+        instaMsg: 'Spara nya Instagram-bilder och -videoklipp',
+        andMore: 'Och så mycket mer...',
+        connect: 'Anslut'
+      };
+
+      var localeTrStrings = {
+        message: 'IFTTT, tüm uygulamalarınız ve aygıtlarınız ile daha fazlasını yapmanızı sağlayan ücretsiz bir platformdur. IFTTT hesabınızla My Cloud Home aygıtınıza bağlanarak, aşağıdaki özellikleri edinirsiniz:',
+        gmailMsg: 'Yeni Gmail eklentilerini kaydetme',
+        fbMsg: 'Yeni etiketlenmiş Facebook fotoğraflarını kaydetme',
+        instaMsg: 'Yeni Instagram fotoğraflarını ve videolarını kaydetme',
+        andMore: 'Ve çok daha fazlası...',
+        connect: 'Bağlan'
+      };
+      var localeZhCnStrings = {
+        message: 'IFTTT 是一个免费平台，可帮助您使用自己的应用程序和设备实现更多操作。将您的 My Cloud Home 设备连接至 IFTTT 账户后，您可以获得以下功能：',
+        gmailMsg: '保存新的 Gmail 附件',
+        fbMsg: '保存新标记的 Facebook 照片',
+        instaMsg: '保存新的 Instagram 照片和视频',
+        andMore: '以及更多功能…',
+        connect: '连接'
+      };
+
+      var localeZhTwStrings = {
+        message: 'IFTTT 是一個免費平台，可協助您使用您的所有應用和裝置執行更多作業。將您的 My Cloud Home 裝置與您的 IFTTT 帳戶關聯後，您可以取得以下功能：',
+        gmailMsg: '儲存新的 Gmail 附件',
+        fbMsg: '儲存新標記的 Facebook 相片',
+        instaMsg: '儲存新的 Instagram 相片和影片',
+        andMore: '以及更多功能…',
+        connect: '連線'
+      };
+
+      function setLocale() {
+        var locale = navigator.languages ? navigator.languages[0] : (navigator.language || navigator.userLanguage);
+        console.log(locale);
+        localizedStrings = localeEnStrings;
+        console.log('localizedStrings', localizedStrings);
+        return true;
+        if(locale === undefined || locale === null) {
+          localizedStrings = localeEnStrings;
+        } else if (locale === 'en' || locale.toUpperCase() === 'en-US'.toUpperCase() || locale.toUpperCase() === 'en-GB'.toUpperCase()){
+          localizedStrings = localeEnStrings;
+        } else if (locale === 'fr' || locale.toUpperCase() === 'fr-fr'.toUpperCase()){
+          localizedStrings = localeFrStrings;
+        } else if (locale === 'es' || locale.toUpperCase() === 'es-es'.toUpperCase()){
+          localizedStrings = localeESStrings;
+        } else if (locale === 'cs' || locale.toUpperCase() === 'cs-CZ'.toUpperCase()){
+          localizedStrings = localeCSStrings;
+        } else if (locale === 'da' || locale.toUpperCase() === 'da-DK'.toUpperCase()){
+          localizedStrings = localeDaStrings;
+        } else if (locale === 'de' || locale.toUpperCase() === 'de-DE'.toUpperCase()){
+          localizedStrings = localeDeStrings;
+        } else if (locale === 'el' || locale.toUpperCase() === 'el-GR'.toUpperCase()){
+          localizedStrings = localeElStrings;
+        } else if (locale === 'fi' || locale.toUpperCase() === 'fi-FI'.toUpperCase()){
+          localizedStrings = localeFiStrings;
+        } else if (locale === 'it' || locale.toUpperCase() === 'it-IT'.toUpperCase()){
+          localizedStrings = localeItStrings;
+        } else if (locale === 'ja' || locale.toUpperCase() === 'ja-JP'.toUpperCase()){
+          localizedStrings = localeJaStrings;
+        } else if (locale === 'ko' || locale.toUpperCase() === 'ko-KR'.toUpperCase()){
+          localizedStrings = localeKoStrings;
+        } else if (locale === 'nb' || locale.toUpperCase() === 'nb-NO'.toUpperCase()){
+          localizedStrings = localeNbStrings;
+        } else if (locale === 'nl' || locale.toUpperCase() === 'nl-NL'.toUpperCase()){
+          localizedStrings = localeNlStrings;
+        } else if (locale === 'pl' || locale.toUpperCase() === 'pl-PL'.toUpperCase()){
+          localizedStrings = localePlStrings;
+        } else if (locale === 'pt' || locale.toUpperCase() === 'pt-BR'.toUpperCase()){
+          localizedStrings = localePtStrings;
+        } else if (locale === 'sk' || locale.toUpperCase() === 'sk-SK'.toUpperCase()){
+          localizedStrings = localeSkStrings;
+        } else if (locale === 'sv' || locale.toUpperCase() === 'sv-SE'.toUpperCase()){
+          localizedStrings = localeSvStrings;
+        } else if (locale === 'tr' || locale.toUpperCase() === 'tr-TR'.toUpperCase()){
+          localizedStrings = localeTrStrings;
+        } else if (locale.toUpperCase() === 'zh-CN'.toUpperCase()){
+          localizedStrings = localeZhCnStrings;
+        } else if (locale.toUpperCase() === 'zh-TW'.toUpperCase()){
+          localizedStrings = localeZhTwStrings;
+        }
+      }
+    </script>
+</head>
+<body>
+<main class="g-layout">
+    <section class="g-container">
+        <div class="g-content">
+            <a class="mycloud-logo-text mobile">
+                <script language="javascript">
+                  setLocale(); document.write(localizedStrings.myCloudServices)
+                </script>
+                  </a>
+            <div class="mycloud-logo-container">
+                <img class="mycloud-logo" src="./images/logo.svg" alt="My Cloud Logo">
+            </div>
+            <div class="ifttt-logo-container">
+                <a href="#">
+                    <img class="ifttt-logo" src="./images/IFTTT.svg" alt="My Cloud Logo">
+                </a>
+            </div>
+            <h1 class="header"><script language="javascript">document.write(localizedStrings.title)</script></h1>
+            <p class="content"><script language="javascript">document.write(localizedStrings.messagePart1)</script></p>
+            <p class="content"><script language="javascript">document.write(localizedStrings.messagePart2)</script></p>
+            <div class="button-container mobile tablet">
+                <a id="connectButton mobile" class="btn btn-primary" href="https://ifttt.com/mycloud" title="My Cloud IFTTT connect button"><script language="javascript">document.write(localizedStrings.connect)</script></a>
+            </div>
+            <!--<div class="test-containers">-->
+                <!--<div class="test-container fb">-->
+                    <!--<h4>-->
+                        <!--<script language="javascript">document.write(localizedStrings.saveNew)</script>-->
+                        <!--<span class="bold">-->
+                                <!--<script language="javascript">document.write(localizedStrings.gmailMsg)</script>-->
+                            <!--</span>-->
+                    <!--</h4>-->
+                    <!--<img class="container-logo" src="./images/gmail.svg" />-->
+                    <!--<img class="container-background" src="./images/gmail_image.png" />-->
+                <!--</div>-->
+                <!--<div class="test-container gmail">-->
+                    <!--<div class="test-container-wrapper">-->
+                        <!--<h4>-->
+                            <!--<script language="javascript">document.write(localizedStrings.saveNew)</script>-->
+                            <!--<span class="bold">-->
+                                    <!--<script language="javascript">document.write(localizedStrings.gmailMsg)</script>-->
+                                <!--</span>-->
+                        <!--</h4>-->
+                        <!--<img class="container-logo" src="./images/gmail.svg" />-->
+                        <!--<img class="container-background" src="./images/gmail_image.png" />-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+            <div class="social-containers">
+                <div class="social-container gmail">
+                    <div class="social-container-content-wrapper">
+                        <h4>
+                            <script language="javascript">document.write(localizedStrings.saveNew)</script>
+                            <span class="bold">
+                                <script language="javascript">document.write(localizedStrings.gmailMsg)</script>
+                            </span>
+                        </h4>
+                        <img class="container-logo" src="./images/gmail.svg" />
+                        <img class="container-background" src="./images/gmail_image.png" />
+                    </div>
+                </div>
+                <div class="social-container fb">
+                    <div class="social-container-content-wrapper">
+                        <h4>
+                            <script language="javascript">document.write(localizedStrings.saveNew)</script>
+                            <script language="javascript">document.write(localizedStrings.tagged)</script>
+                            <span class="bold">
+                                <script language="javascript">document.write(localizedStrings.fbMsg)</script>
+                            </span>
+                        </h4>
+                        <img class="container-logo" src="./images/facebook.svg" />
+                        <img class="container-background" src="./images/facebook_image.png" />
+                    </div>
+                </div>
+                <div class="social-container instagram">
+                    <div class="social-container-content-wrapper">
+                        <h4>
+                            <script language="javascript">document.write(localizedStrings.saveNew)</script>
+                            <span class="bold">
+                                <script language="javascript">document.write(localizedStrings.instaMsg)</script>
+                            </span>
+                        </h4>
+                        <img class="container-logo" src="./images/instagram.svg" />
+                        <img class="container-background" src="./images/instagram_image.png" />
+                    </div>
+                </div>
+                <div class="social-container more">
+                    <div class="social-container-content-wrapper">
+                        <h4>
+                            <script language="javascript">document.write(localizedStrings.andSo)</script>
+                            <span class="bold">
+                                <script language="javascript">document.write(localizedStrings.andMore)</script>
+                            </span>
+                        </h4>
+                        <img class="container-logo" src="./images/more.svg" />
+                        <img class="container-background" src="./images/muchmore_image.png" />
+                    </div>
+                </div>
+            </div>
+            <div class="button-container desktop">
+                <a id="connectButton2" class="btn btn-primary" href="https://ifttt.com/mycloud" title="My Cloud IFTTT connect button"><script language="javascript">document.write(localizedStrings.connect)</script></a>
+            </div>
+          </div>
+    </section>
+</main>
+</body>
+</html>
+

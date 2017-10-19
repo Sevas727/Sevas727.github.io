@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="60px" height="60px" version="1.1" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd"
+viewBox="0 0 600 600"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <g id="Layer_x0020_1">
+  <metadata id="d"/>
+  <rect fill="#464646" x="510" width="19.9978" height="140.001"/>
+  <rect fill="#464646" transform="matrix(1.1034E-014 0.416621 -0.476921 1.2631E-014 590.001 60.0031)" width="48" height="293.552"/>
+  <rect fill="white" x="510" y="10" width="19.9978" height="140.001"/>
+  <rect fill="white" transform="matrix(1.1034E-014 0.416621 -0.476921 1.2631E-014 590.001 70.0037)" width="48" height="293.552"/>
+  <rect fill="#464646" x="270" y="120" width="60.0045" height="339.999"/>
+  <rect fill="#464646" transform="matrix(3.31082E-014 1.25009 -1.15822 3.0675E-014 469.999 259.995)" width="48" height="293.552"/>
+  <rect fill="white" x="270" y="130" width="60.0045" height="339.999"/>
+  <rect fill="white" transform="matrix(3.31082E-014 1.25009 -1.15822 3.0675E-014 469.999 269.996)" width="48" height="293.552"/>
+ </g>
+</svg>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="60px" height="60px" version="1.1" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd"
+viewBox="0 0 600 600"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <g id="Layer_x0020_1">
+  <metadata id="s"/>
+  <path fill="#EEEEEE" d="M562 530l-524 0c-21,0 -38,-16 -38,-37l0 -370c0,-20 17,-43 38,-43l524 0c18,0 38,23 38,37l0 376c0,21 -17,37 -38,37l0 0z"/>
+  <path fill="#D4473A" d="M38 530c-21,0 -38,-17 -38,-37l0 -372c0,-21 17,-32 38,-32 20,0 37,4 37,24l0 417 -37 0 0 0z"/>
+  <path fill="#B23121" d="M562 530c21,0 38,-17 38,-37l0 -377c0,-13 -25,-27 -38,-27 -20,0 -37,4 -37,24l0 417 37 0 0 0z"/>
+  <path fill="#962415" d="M490 128l50 -37c17,-13 41,-9 53,8 12,17 8,41 -9,54l-94 70 0 -95z"/>
+  <polygon fill="#DBDBDB" points="264,387 525,192 525,530 410,530 "/>
+  <polygon fill="#E2E2E2" points="300,360 75,192 75,530 "/>
+  <polygon fill="#C8C8C8" points="300,360 75,193 75,207 264,387 "/>
+  <polygon fill="#B23121" points="14,148 75,193 75,207 "/>
+  <path fill="#DD4E41" d="M17 149c-17,-12 -22,-36 -10,-53 13,-17 37,-21 54,-9l239 179 240 -179c17,-12 41,-8 53,9 12,17 8,41 -9,53l-284 211 -283 -211z"/>
+ </g>
+</svg>
