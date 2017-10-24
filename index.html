@@ -345,12 +345,16 @@
     }, false);
   }
 
-  //close modals when clock on dark background
-  window.onclick = function(event) {
+  var hideModal = function(event) {
     if (event.target == modal) {
       modal.style.display = "none";
     }
   }
+
+  //close modals when clock on dark background
+  window.onclick = hideModal;
+  window.touchstart = hideModal;
+
 </script>
 </body>
 </html>
