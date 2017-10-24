@@ -355,8 +355,8 @@
 
   //close modals when clock on dark background
     window.onload = function () {
-      window.onclick = hideModal;
-      window.touchstart = hideModal;
+      addEventListener('click', hideModal, false);
+      addEventListener('touchstart', hideModal, false);
     }
 
 
