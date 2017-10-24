@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./js/switchery/dist/switchery.css" />
     <script src="./js/switchery/dist/switchery.js"></script>
+    <script src="./js/tapEvent.js"></script>
     <script language="javascript">
       window.onload = function() {
         setLocale();
@@ -355,8 +356,15 @@
 
   //close modals when clock on dark background
     window.onload = function () {
-      addEventListener('click', hideModal, false);
-      addEventListener('touchstart', hideModal, false);
+//      document.getElementById('tapBtn').addEventListener('tap', function(e){
+//        console.log('TAP - catched on #tapBtn');
+//      }, false);
+//
+//      document.addEventListener('tap', function(e){
+//        console.log('TAP - catched on document');
+//      }, true);
+      window.addEventListener('click', hideModal, false);
+      window.addEventListener('touchstart', hideModal, false);
     }
 
 
