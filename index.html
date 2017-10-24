@@ -356,15 +356,15 @@
 
   //close modals when clock on dark background
     window.onload = function () {
-//      document.getElementById('tapBtn').addEventListener('tap', function(e){
-//        console.log('TAP - catched on #tapBtn');
-//      }, false);
-//
-//      document.addEventListener('tap', function(e){
-//        console.log('TAP - catched on document');
-//      }, true);
+//      window.addEventListener('tap', hideModal, false);
+
+      document.addEventListener("touchstart", hideModal, true);
+      document.addEventListener("touchmove", hideModal, true);
+      document.addEventListener("touchend", hideModal, true);
+      document.addEventListener("touchcancel", hideModal, true);
+
       window.addEventListener('click', hideModal, false);
-      window.addEventListener('touchstart', hideModal, false);
+//      window.addEventListener('touchstart', hideModal, false);
     }
 
 
