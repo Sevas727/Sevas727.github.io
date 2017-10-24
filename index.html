@@ -341,13 +341,11 @@
 
   for (var i = 0; i < closeItems.length; i++) {
     closeItems[i].addEventListener('click', function(e) {
-      alert(1);
       modal.style.display = "none";
     }, false);
   }
 
   var hideModal = function(event) {
-    console.log('touch2');
     if (event.target == modal) {
       modal.style.display = "none";
     }
