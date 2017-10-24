@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./js/switchery/dist/switchery.css" />
     <script src="./js/switchery/dist/switchery.js"></script>
-    <script src="./js/tapEvent.js"></script>
     <script language="javascript">
       window.onload = function() {
         setLocale();
@@ -342,13 +341,13 @@
 
   for (var i = 0; i < closeItems.length; i++) {
     closeItems[i].addEventListener('click', function(e) {
+      alert(1);
       modal.style.display = "none";
     }, false);
   }
 
   var hideModal = function(event) {
-    alert('touch2');
-    console.log('touch2',);
+    console.log('touch2');
     if (event.target == modal) {
       modal.style.display = "none";
     }
@@ -356,15 +355,7 @@
 
   //close modals when clock on dark background
     window.onload = function () {
-//      window.addEventListener('tap', hideModal, false);
-
-      document.getElementsByClassName('modal-container')[0].addEventListener("touchstart", hideModal, true);
-      document.getElementsByClassName('modal-container')[0].addEventListener("touchmove", hideModal, true);
-      document.getElementsByClassName('modal-container')[0].addEventListener("touchend", hideModal, true);
-      document.getElementsByClassName('modal-container')[0].addEventListener("touchcancel", hideModal, true);
-
       document.getElementsByClassName('modal-container')[0].addEventListener('click', hideModal);
-//      window.addEventListener('touchstart', hideModal, false);
     }
 
 
