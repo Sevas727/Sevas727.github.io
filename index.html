@@ -355,17 +355,17 @@
   }
 
   //close modals when clock on dark background
-    window.onload = function () {
+//    window.onload = function () {
 //      window.addEventListener('tap', hideModal, false);
 
-      document.addEventListener("touchstart", hideModal, true);
-      document.addEventListener("touchmove", hideModal, true);
-      document.addEventListener("touchend", hideModal, true);
-      document.addEventListener("touchcancel", hideModal, true);
+//      document.getElementsByClassName('modal-container')[0].addEventListener("touchstart", hideModal, true);
+//      document.getElementsByClassName('modal-container')[0].addEventListener("touchmove", hideModal, true);
+//      document.getElementsByClassName('modal-container')[0].addEventListener("touchend", hideModal, true);
+//      document.getElementsByClassName('modal-container')[0].addEventListener("touchcancel", hideModal, true);
 
-      window.addEventListener('click', hideModal, false);
+      document.getElementsByClassName('modal-container')[0].addEventListener('click', hideModal, false);
 //      window.addEventListener('touchstart', hideModal, false);
-    }
+//    }
 
 
 </script>
