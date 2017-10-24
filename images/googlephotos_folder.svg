@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="70px" height="54px" version="1.1" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd"
+viewBox="0 0 700 540"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <g id="Layer_x0020_1">
+  <metadata id="s"/>
+  <path fill="#72C58B" d="M0 105l700 0 0 -5c0,-23 -19,-41 -41,-41l-334 0 -64 -59 -220 0c-23,0 -41,19 -41,41l0 64z"/>
+  <path fill="#BAE5A6" d="M0 93l700 0 0 392c0,23 -19,42 -41,42l-618 0c-23,0 -41,-19 -41,-42l0 -392z"/>
+  <path fill="#E04D3B" d="M325 240l-56 60c-5,-5 -8,-12 -9,-22l0 -108 65 70z"/>
+  <path fill="#B21D5C" d="M269 300l56 -60 0 70 -33 0c-9,0 -17,-4 -23,-10z"/>
+  <path fill="#4083F7" d="M330 375l-60 -56c5,-5 12,-8 22,-9l108 0 -70 65z"/>
+  <path fill="#3467DB" d="M270 319l60 56 -70 0 0 -33c0,-9 4,-17 10,-23z"/>
+  <path fill="#8DC745" d="M195 380l56 -60c5,5 8,12 9,22l0 108 -65 -70z"/>
+  <path fill="#1FA561" d="M251 320l-56 60 0 -70 33 0c9,0 17,4 23,10z"/>
+  <path fill="#FFC300" d="M190 245l60 56c-5,5 -12,8 -22,9l-108 0 70 -65z"/>
+  <path fill="#FFA000" d="M250 301l-60 -56 70 0 0 33c0,9 -4,17 -10,23z"/>
+ </g>
+</svg>
