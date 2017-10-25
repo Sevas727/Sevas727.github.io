@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="48px" height="48px" version="1.1" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd"
+viewBox="0 0 480 480"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <g id="Layer_x0020_1">
+  <metadata id="s"/>
+  <circle fill="black" cx="240" cy="240" r="240"/>
+  <circle fill="white" cx="240" cy="240" r="220"/>
+  <circle fill="#00CAFF" cx="240" cy="240" r="195"/>
+  <polygon fill="white" points="261,143 261,337 230,337 230,180 190,192 183,165 250,143 "/>
+ </g>
+</svg>
