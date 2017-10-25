@@ -502,7 +502,7 @@ body {
     background-image: url("../images/onedrive_folder.svg");
 }
 
-@media screen and (min-width: 768px) and (max-width: 1023px) {
+@media screen and (min-width: 768px) and (max-width: 1025px) {
 
     .mycloud-logo {
         padding: 5px 0 0 7px;
