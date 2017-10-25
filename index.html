@@ -6,8 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>My Cloud Social and Cloud Import</title>
     <link rel="stylesheet" href="./css/index.css">
-    <link rel="stylesheet" href="./js/switchery/dist/switchery.css" />
-    <script src="./js/switchery/dist/switchery.js"></script>
     <script language="javascript">
       window.onload = function() {
         setLocale();
@@ -15,27 +13,35 @@
       var localizedStrings = {};
       var localeEnStrings = {
         myCloudServices: 'My Cloud Services',
-        title: 'Social and Cloud Import',
-        content: 'My Cloud Home can connect with your cloud storage accounts and make sure that your files are always up to date.',
-        db: 'Dropbox',
-        fb: 'Facebook',
-        gd: 'Google Drive',
-        od: 'OneDrive',
-        gp: 'Google Photos',
-        box: 'Box',
-        fbErr: "User denied access to Facebook for Social and Cloud Import app.",
-        importErr: "Import Error",
-        close: "close",
-        disable: "disable",
-        enabled: "Synchronization Enabled",
-        disTitle: "Disable Synchronization?",
-        disText: "Disabling synchronization will stop all file transfers with Facebook going " +
-        "forward. The files which have already been imported to your device will " +
-        "not be deleted. You can turn sync back on at any time.",
-        fBenabledText: "Your account was successfully connected to Facebook and will begin syncing shortly. " +
-        "A Facebook folder has been created on your device and can be accessed via the My Cloud Home mobile, " +
-        "web or desktop applications. Please note the initial sync may take a while depending on how many files " +
-        "need to be copied.",
+        title: 'Connect Amazon Alexa',
+        content1: 'Alexa is an intelligent personal assistant which is capable of voice interaction, music playback, ' +
+        'making to-do lists, setting alarms, streaming podcasts, playing audiobooks and other. Alexa can also control ' +
+        'several smart devices using itself as a home automation system.',
+        content2: 'You can stream and listen music stored on your My Cloud Home device from Alexa enabled device like Echo or Echo Dot.',
+        findOur: 'Find our',
+        eitherON: 'either on',
+        toGet: 'to get My Cloud Home skill.',
+        amazAlexMob: 'Amazon Alexa mobile app',
+        orUse: 'or use',
+        alexApp: 'Alexa application.',
+        alexaSkillCat: 'Alexa Skill Catalog',
+        enableThisSkill: 'Enable this skill',
+        withYourCred: 'with your My Cloud Home credentials.',
+        and: 'and',
+        signIn: 'sign in',
+        andRun: 'and run',
+        amAc: 'Amazon account',
+        conYour: 'Connect your',
+        devToAlex: 'device to Alexa application.',
+        steam: 'Stream and listnen your music just from your My Cloud connected device.',
+        conSucTitle: 'Alexa Connection Successfull',
+        conSucText: 'Your My Cloud Home now successfully connected with Alexa service.',
+        youMay: 'You may close this page or continue with',
+        myCloudHomeSc: 'My Cloud Home skill',
+        myCloudHomeOnline: 'My Cloud Home Online.',
+        streamAndListen: 'Stream and listen music',
+        storedIn: 'stored on your My Cloud Home device from Alexa enabled device like Echo or Echo Dot.',
+        goBtn: 'Go to My cloud home skill'
       };
 
       function setLocale() {
@@ -89,277 +95,110 @@
 
 </head>
 <body>
-    <!--MODALS-->
-    <div class="modal-container">
-        <div id="error-modal" class="modal">
-            <div class="modal-header">
-                <div class="close-btn close">
-                    <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="12px" height="12px" version="1.1" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd"
-                    viewBox="0 0 120 120"
-                     xmlns:xlink="http://www.w3.org/1999/xlink">
-                         <g id="s">
-                          <metadata id="CorelCorpID_0Corel-Layer"/>
-                          <rect fill="#464646" transform="matrix(0.431253 -0.431253 0.545957 0.545957 -0.00423632 11.3165)" width="26.2505" height="199.076"/>
-                          <rect fill="#464646" transform="matrix(-0.431253 -0.431253 -0.545957 0.545957 120.004 11.3166)" width="26.2505" height="199.076"/>
-                         </g>
-                    </svg>
-                </div>
-                <script language="javascript">setLocale(); document.write(localizedStrings.importErr)</script>
-            </div>
-            <p class="modal-text"><script language="javascript">document.write(localizedStrings.fbErr)</script></p>
-            <div class="button-container">
-                <button type="button" class="btn btn-transparent close"><script language="javascript">document.write(localizedStrings.close)</script></button>
-            </div>
-        </div>
-
-        <div id="disable-modal" class="modal">
-            <div class="modal-header">
-                <div class="close-btn close">
-                    <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="12px" height="12px" version="1.1" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd"
-                        viewBox="0 0 120 120"
-                         xmlns:xlink="http://www.w3.org/1999/xlink">
-                         <g id="s">
-                          <metadata id="CorelCorpID_0Corel-Layer"/>
-                          <rect fill="#464646" transform="matrix(0.431253 -0.431253 0.545957 0.545957 -0.00423632 11.3165)" width="26.2505" height="199.076"/>
-                          <rect fill="#464646" transform="matrix(-0.431253 -0.431253 -0.545957 0.545957 120.004 11.3166)" width="26.2505" height="199.076"/>
-                         </g>
-                    </svg>
-                </div>
-                <script language="javascript">setLocale(); document.write(localizedStrings.disTitle)</script>
-            </div>
-            <p class="modal-text"><script language="javascript">document.write(localizedStrings.disText)</script></p>
-            <div class="button-container">
-                <button type="button" class="btn btn-primary"><script language="javascript">document.write(localizedStrings.disable)</script></button>
-                <button type="button" class="btn btn-white close"><script language="javascript">document.write(localizedStrings.close)</script></button>
-            </div>
-        </div>
-
-        <div id="enabled-modal" class="modal">
-            <div class="modal-header">
-                <div class="close-btn close">
-                    <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="12px" height="12px" version="1.1" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd"
-                        viewBox="0 0 120 120"
-                         xmlns:xlink="http://www.w3.org/1999/xlink">
-                         <g id="s">
-                          <metadata id="CorelCorpID_0Corel-Layer"/>
-                          <rect fill="#464646" transform="matrix(0.431253 -0.431253 0.545957 0.545957 -0.00423632 11.3165)" width="26.2505" height="199.076"/>
-                          <rect fill="#464646" transform="matrix(-0.431253 -0.431253 -0.545957 0.545957 120.004 11.3166)" width="26.2505" height="199.076"/>
-                         </g>
-                    </svg>
-                </div>
-                <script language="javascript">setLocale(); document.write(localizedStrings.enabled)</script>
-            </div>
-            <p class="modal-text"><script language="javascript">document.write(localizedStrings.fBenabledText)</script></p>
-            <div class="folder-icon-container fb"></div>
-            <div class="button-container">
-                <button type="button" class="btn btn-transparent close"><script language="javascript">document.write(localizedStrings.close)</script></button>
-            </div>
-        </div>
-    </div>
-    <!--MODALS END-->
     <div class="g-layout">
-    <div class="g-container">
-        <!--My cloud LOGO-->
-        <header>
-            <a class="mycloud-logo-text mobile">
-                <script language="javascript">
-                  document.write(localizedStrings.myCloudServices)
-                </script>
-            </a>
-            <div class="mycloud-logo-container">
-                <img class="mycloud-logo" src="./images/mycloudservices_logo.svg" alt="My Cloud Logo">
-            </div>
-            <div class="socialcloudimport-logo-container">
-                <a href="#">
-                    <img class="socialcloudimport-logo" src="./images/socialcloudimport.svg" alt="Social Cloud Logo">
+        <div class="g-container">
+            <!--My cloud LOGO-->
+            <header>
+                <a class="mycloud-logo-text mobile">
+                    <script language="javascript">
+                      setLocale();
+                      document.write(localizedStrings.myCloudServices);
+                    </script>
                 </a>
-            </div>
-        </header>
-        <!--CONTENT-->
-        <main>
-            <h1 class="title"><script language="javascript">setLocale(); document.write(localizedStrings.title)</script></h1>
-            <p class="content"><script language="javascript">document.write(localizedStrings.content)</script></p>
-            <div class="social-containers">
+                <div class="mycloud-logo-container">
+                    <img class="mycloud-logo" src="./images/mycloudservices_logo.svg" alt="My Cloud Logo">
+                </div>
+                <div class="alexa-logo-container">
+                    <a href="#">
+                        <img class="alexa-logo" src="./images/alexa.svg" alt="Social Cloud Logo">
+                    </a>
+                </div>
+            </header>
+            <!--CONTENT-->
+            <main>
+                <h1 class="title"><script language="javascript">document.write(localizedStrings.title)</script></h1>
+                <p class="content"><script language="javascript">document.write(localizedStrings.content1)</script></p>
+                <p class="content"><script language="javascript">document.write(localizedStrings.content2)</script></p>
+                <div class="containers">
 
-                <!--SOCIAL CONTAINER-->
-                <div class="social-container">
-                    <div class="social-container-content-wrapper">
-                        <img class="container-logo" src="./images/dropbox.svg" />
-                        <h4>
-                            <script language="javascript">document.write(localizedStrings.db)</script>
-                        </h4>
-                        <div class="user-data-container">
-                            <p class="user-data">email.teat@gmail.com</p>
-                            <div class="preloader-container">
-                            <span class="preloader">
-                              <svg xmlns="http://www.w3.org/2000/svg" version="1.1" height="20" width="20" viewBox="0 0 75 75">
-                                <circle cx="37.5" cy="37.5" r="33.5" stroke-width="8" stroke="#00A0DF"></circle>
-                              </svg>
-                            </span>
-                            </div>
-                        </div>
-                        <div class="checkbox-container">
-                            <input type="checkbox" class="js-switch" />
+                    <!--SOCIAL CONTAINER-->
+                    <div class="container">
+                        <div class="container-content-wrapper">
+                            <img class="container-logo" src="./images/alexa_imagedevices.svg" />
                         </div>
                     </div>
-                </div>
 
-                <div class="social-container">
-                    <div class="social-container-content-wrapper">
-                        <img class="container-logo" src="./images/facebook.svg" />
-                        <h4>
-                            <script language="javascript">document.write(localizedStrings.fb)</script>
-                        </h4>
-                        <div class="user-data-container">
-                            <p class="user-data">email.teat@gmail.com</p>
-                            <div class="preloader-container">
-                            <span class="preloader">
-                              <svg xmlns="http://www.w3.org/2000/svg" version="1.1" height="20" width="20" viewBox="0 0 75 75">
-                                <circle cx="37.5" cy="37.5" r="33.5" stroke-width="8" stroke="#00A0DF"></circle>
-                              </svg>
-                            </span>
+                    <div class="container">
+                        <div class="container-content-wrapper">
+                            <div class="right-container-block">
+                                <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="48px" height="48px" version="1.1" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd"
+                                    viewBox="0 0 480 480"
+                                     xmlns:xlink="http://www.w3.org/1999/xlink">
+                                     <g id="Layer_x0020_1">
+                                      <metadata id="s"/>
+                                      <circle fill="black" cx="240" cy="240" r="240"/>
+                                      <circle fill="white" cx="240" cy="240" r="220"/>
+                                      <circle fill="#00CAFF" cx="240" cy="240" r="195"/>
+                                      <polygon fill="white" points="261,143 261,337 230,337 230,180 190,192 183,165 250,143 "/>
+                                     </g>
+                                </svg>
+                                <p>
+                                    <script language="javascript">document.write(localizedStrings.findOur)</script>
+                                    <span><script language="javascript">document.write(localizedStrings.myCloudHomeSc)</script></span>
+                                    <a href="#"><script language="javascript">document.write(localizedStrings.alexaSkillCat)</script></a>
+                                    <script language="javascript">document.write(localizedStrings.orUse)</script>
+                                    <a href="#"><script language="javascript">document.write(localizedStrings.amazAlexMob)</script></a>
+                                    <script language="javascript">document.write(localizedStrings.toGet)</script>
+                                </p>
+                            </div>
+
+                            <div class="right-container-block">
+                                <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="48px" height="48px" version="1.1" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd"
+                                    viewBox="0 0 480 480"
+                                     xmlns:xlink="http://www.w3.org/1999/xlink">
+                                     <g id="Layer_x0020_1">
+                                      <metadata id="s"/>
+                                      <circle fill="black" cx="240" cy="240" r="240"/>
+                                      <circle fill="white" cx="240" cy="240" r="220"/>
+                                      <circle fill="#00CAFF" cx="240" cy="240" r="195"/>
+                                      <path fill="white" d="M305 310l0 27 -139 0 0 -7 69 -74c11,-12 19,-22 24,-29 5,-8 7,-16 7,-25 0,-9 -3,-17 -9,-24 -6,-6 -13,-10 -23,-10 -10,0 -18,4 -24,11 -6,6 -9,15 -9,25 0,4 0,9 1,15l-31 0c-1,-6 -2,-11 -2,-17 0,-11 3,-21 8,-30 5,-10 13,-17 23,-23 9,-6 21,-9 34,-9 12,0 23,3 33,8 10,5 17,12 23,21 5,10 8,20 8,31 0,13 -3,25 -10,36 -7,11 -17,23 -31,38l-34 36 82 0z"/>
+                                     </g>
+                                </svg>
+                                <p>
+                                    <span><script language="javascript">document.write(localizedStrings.enableThisSkill)</script></span>
+                                    <script language="javascript">document.write(localizedStrings.and)</script>
+                                    <span><script language="javascript">document.write(localizedStrings.signIn)</script></span>
+                                    <script language="javascript">document.write(localizedStrings.withYourCred)</script>
+                                </p>
+                            </div>
+
+                            <div class="right-container-block">
+                                <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="48px" height="48px" version="1.1" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd"
+                                    viewBox="0 0 480 480"
+                                     xmlns:xlink="http://www.w3.org/1999/xlink">
+                                     <g id="Layer_x0020_1">
+                                      <metadata id="d"/>
+                                      <circle fill="black" cx="240" cy="240" r="240"/>
+                                      <circle fill="white" cx="240" cy="240" r="220"/>
+                                      <circle fill="#00CAFF" cx="240" cy="240" r="195"/>
+                                      <path fill="white" d="M260 215c14,2 26,9 36,19 10,10 15,24 15,41 0,13 -3,24 -9,34 -7,10 -15,18 -26,23 -11,5 -23,8 -35,8 -16,0 -30,-4 -41,-12 -12,-7 -21,-17 -27,-30l21 -15c6,9 13,16 20,21 7,5 16,8 26,8 11,0 21,-4 28,-11 8,-6 11,-15 11,-26 0,-11 -4,-19 -11,-25 -8,-6 -19,-9 -33,-9l-22 0 0 -9 45 -60 -72 0 0 -29 121 0 0 9 -47 63z"/>
+                                     </g>
+                                </svg>
+                                <p>
+                                    <span><script language="javascript">document.write(localizedStrings.streamAndListen)</script></span>
+                                    <script language="javascript">document.write(localizedStrings.storedIn)</script>
+                                </p>
                             </div>
                         </div>
-                        <div class="checkbox-container">
-                            <input type="checkbox" class="js-switch" />
-                        </div>
                     </div>
-                </div>
 
-                <div class="social-container">
-                    <div class="social-container-content-wrapper">
-                        <img class="container-logo" src="./images/googledrive.svg" />
-                        <h4>
-                            <script language="javascript">document.write(localizedStrings.gd)</script>
-                        </h4>
-                        <div class="user-data-container">
-                            <p class="user-data">email.teat@gmail.com</p>
-                            <div class="preloader-container">
-                            <span class="preloader">
-                              <svg xmlns="http://www.w3.org/2000/svg" version="1.1" height="20" width="20" viewBox="0 0 75 75">
-                                <circle cx="37.5" cy="37.5" r="33.5" stroke-width="8" stroke="#00A0DF"></circle>
-                              </svg>
-                            </span>
-                            </div>
-                        </div>
-                        <div class="checkbox-container">
-                            <input type="checkbox" class="js-switch" />
-                        </div>
-                    </div>
                 </div>
-
-                <div class="social-container">
-                    <div class="social-container-content-wrapper">
-                        <img class="container-logo" src="./images/onedrive.svg" />
-                        <h4>
-                            <script language="javascript">document.write(localizedStrings.od)</script>
-                        </h4>
-                        <div class="user-data-container">
-                            <p class="user-data">email.teat@gmail.com</p>
-                            <div class="preloader-container">
-                            <span class="preloader">
-                              <svg xmlns="http://www.w3.org/2000/svg" version="1.1" height="20" width="20" viewBox="0 0 75 75">
-                                <circle cx="37.5" cy="37.5" r="33.5" stroke-width="8" stroke="#00A0DF"></circle>
-                              </svg>
-                            </span>
-                            </div>
-                        </div>
-                        <div class="checkbox-container">
-                            <input type="checkbox" class="js-switch" />
-                        </div>
-                    </div>
+                <div class="btn-container">
+                    <a class="btn btn-primary" href="#"><script language="javascript">document.write(localizedStrings.goBtn)</script></a>
                 </div>
-
-                <div class="social-container">
-                    <div class="social-container-content-wrapper">
-                        <img class="container-logo" src="./images/googlephotos.svg" />
-                        <h4>
-                            <script language="javascript">document.write(localizedStrings.gp)</script>
-                        </h4>
-                        <div class="user-data-container">
-                            <p class="user-data">email.teat@gmail.com</p>
-                            <div class="preloader-container">
-                                <span class="preloader">
-                                  <svg xmlns="http://www.w3.org/2000/svg" version="1.1" height="20" width="20" viewBox="0 0 75 75">
-                                    <circle cx="37.5" cy="37.5" r="33.5" stroke-width="8" stroke="#00A0DF"></circle>
-                                  </svg>
-                                </span>
-                            </div>
-                        </div>
-                        <div class="checkbox-container">
-                            <input type="checkbox" class="js-switch" />
-                        </div>
-                    </div>
-                </div>
-
-                <div class="social-container">
-                    <div class="social-container-content-wrapper">
-                        <img class="container-logo" src="./images/box.svg" />
-                        <h4>
-                            <script language="javascript">document.write(localizedStrings.box)</script>
-                        </h4>
-                        <div class="user-data-container">
-                            <p class="user-data">email.teat@gmail.com</p>
-                            <div class="preloader-container">
-                            <span class="preloader">
-                              <svg xmlns="http://www.w3.org/2000/svg" version="1.1" height="20" width="20" viewBox="0 0 75 75">
-                                <circle cx="37.5" cy="37.5" r="33.5" stroke-width="8" stroke="#00A0DF"></circle>
-                              </svg>
-                            </span>
-                            </div>
-                        </div>
-                        <div class="checkbox-container">
-                            <input type="checkbox" class="js-switch" />
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </main>
+            </main>
+        </div>
     </div>
-    </div>
-<script>
-
-    // switchery
-  var elems = Array.prototype.slice.call(document.querySelectorAll('.js-switch'));
-
-  elems.forEach(function(html) {
-    var switchery = new Switchery(html);
-  });
-//you can set event handler for swichery here
-  for (var j = 0; j < elems.length; j++) {
-    elems[j].onchange = function(e) {
-       var container = e.target.parentNode.parentNode;
-       if(e.target.checked){
-         container.classList.add("show-spinner");
-       } else {
-         container.classList.remove("show-spinner");
-       }
-    };
-  }
-
-  var modal = document.getElementsByClassName('modal-container')[0];
-  var closeItems = document.getElementsByClassName("close");
-
-  for (var i = 0; i < closeItems.length; i++) {
-    closeItems[i].addEventListener('click', function(e) {
-      modal.style.display = "none";
-    }, false);
-  }
-
-  var hideModal = function(event) {
-    if (event.target == modal) {
-      modal.style.display = "none";
-    }
-  }
-
-  //close modals when clock on dark background
-    window.onload = function () {
-      document.getElementsByClassName('modal-container')[0].addEventListener('click', hideModal);
-    }
-
-
-</script>
 </body>
 </html>
 
