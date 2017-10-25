@@ -94,6 +94,10 @@ body {
     flex: 1;
 }
 
+.g-container {
+    padding-bottom: 35px;
+}
+
 .mycloud-logo-container {
     height: 54px;
 }
@@ -102,18 +106,17 @@ body {
     padding: 6px 0 0 16px;
 }
 
-.socialcloudimport-logo-container {
+.alexa-logo-container {
     text-align: center;
 }
 
-.socialcloudimport-logo-container img {
+.alexa-logo-container img {
     height: 96px;
     width: auto;
 }
 
-.socialcloudimport-logo {
+.alexa-logo {
     margin: 0 auto;
-    width: 200px;
 }
 
 .title {
@@ -123,13 +126,17 @@ body {
 }
 
 .content {
-    max-width: 680px;
+    max-width: 1024px;
     margin: 0 auto;
     text-align: center;
     padding: 0 10px;
 }
 
-.social-containers {
+.content:last-of-type {
+    margin: 20px auto 60px auto;
+}
+
+.containers {
     width: 100%;
     padding: 0;
     margin: 30px auto 0 auto;
@@ -143,272 +150,55 @@ body {
     -webkit-flex-flow: row;
     justify-content: space-around;
     line-height:30px;
-    max-width: 1600px;
+    max-width: 1200px;
 }
 
-.social-container {
+.container {
+    flex: 1;
     text-align: center;
-    width: 200px;
-    height: 210px;
 }
 
-.social-container-content-wrapper {
+.container-content-wrapper {
     position: relative;
     width: 100%;
     height: 100%;
-    padding: 10px;
 }
 
-.social-container-content-wrapper h4 {
-    font-size: 23px;
+.right-container-block {
+    padding-bottom: 25px;
 }
 
-.preloader {
-    font-size: 0;
-    display: inline-block;
-    -webkit-animation: outer 2640ms linear infinite;
-    animation: outer 2640ms linear infinite;
-    line-height: 0;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+.right-container-block:last-of-type {
+    padding-bottom: 0;
 }
 
-.preloader-container {
-    height: 24px;
-    margin-top: 6px;
-    display: none;
+.right-container-block p {
+    margin-top: 4px;
 }
 
-@-webkit-keyframes outer {
-    0% {
-        transform: rotate(0);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
-}
-@-moz-keyframes outer {
-    0% {
-        transform: rotate(0);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
-}
-@-o-keyframes outer {
-    0% {
-        transform: rotate(0);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
-}
-@keyframes outer {
-    0% {
-        transform: rotate(0);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
-}
-
-@-webkit-keyframes arc {
-    0% {
-        stroke-dasharray: 1 292.16812px;
-        stroke-dashoffset: 0;
-    }
-
-    40% {
-        stroke-dasharray: 210.36104px, 292.16812px;
-        stroke-dashoffset: 0;
-    }
-    100% {
-        stroke-dasharray: 1 292.16812px;
-        stroke-dashoffset: -210.36104px;
-    }
-}
-@-moz-keyframes arc {
-    0% {
-        stroke-dasharray: 1 292.16812px;
-        stroke-dashoffset: 0;
-    }
-
-    40% {
-        stroke-dasharray: 210.36104px, 292.16812px;
-        stroke-dashoffset: 0;
-    }
-    100% {
-        stroke-dasharray: 1 292.16812px;
-        stroke-dashoffset: -210.36104px;
-    }
-}
-@-o-keyframes arc {
-    0% {
-        stroke-dasharray: 1 292.16812px;
-        stroke-dashoffset: 0;
-    }
-
-    40% {
-        stroke-dasharray: 210.36104px, 292.16812px;
-        stroke-dashoffset: 0;
-    }
-    100% {
-        stroke-dasharray: 1 292.16812px;
-        stroke-dashoffset: -210.36104px;
-    }
-}
-@keyframes arc {
-    0% {
-        stroke-dasharray: 1 292.16812px;
-        stroke-dashoffset: 0;
-    }
-
-    40% {
-        stroke-dasharray: 210.36104px, 292.16812px;
-        stroke-dashoffset: 0;
-    }
-    100% {
-        stroke-dasharray: 1 292.16812px;
-        stroke-dashoffset: -210.36104px;
-    }
-}
-
-.preloader svg {
-    -webkit-animation: inner 1320ms linear infinite;
-    animation: inner 1320ms linear infinite;
-}
-
-.preloader svg circle {
-    fill: none;
-    -webkit-animation: arc 1320ms cubic-bezier(0.8, 0, 0.4, 0.8) infinite;
-    animation: arc 1320ms cubic-bezier(0.8, 0, 0.4, 0.8) infinite;
-}
-
-.user-data-container {
-    font-size: 13px;
-}
-
-.user-data-container .preloader {
-    display: none;
-}
-
-.show-spinner .user-data {
-    display: none;
-}
-
-.show-spinner .preloader-container {
-    display: block;
-}
-
-.show-spinner .preloader {
-    display: inline;
-}
-
-.social-container-content-wrapper.show-spinner h4 {
-    top: 26px;
-}
-
-.social-container-content-wrapper .container-logo {
-    width: 60px;
-}
-
-.checkbox-container {
-    margin: 10px auto;
-}
-
-.modal-container {
-    background: rgba(0, 0, 0, 0.5);
-    /*display: none;*/
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    display: flex;
-}
-
-.modal {
-    margin: auto;
-    max-width: 300px;
-    -webkit-border-radius: 10px;
-    border-radius: 10px;
-    background-color: #fff;
-    color: #333333;
-    -webkit-box-shadow: 0 2px 10px 2px rgba(0, 0, 0, 0.3);
-    box-shadow: 0 2px 10px 2px rgba(0, 0, 0, 0.3);
-    font-size: 15px;
-    /*pointer-events: none;*/
-    width: 100%;
-    position: relative;
-    padding-bottom: 20px;
-    display: none;
-}
-
-.modal-header {
-    text-align: center;
-    padding: 8px 40px;
-    position: relative;
+.right-container-block p a {
+    color: #00A0DF;
+    text-decoration: none;
     font-family: 'CeraProModern500', sans-serif;
 }
 
-.modal-text {
+.right-container-block p a:hover {
+    color: #0CACEB;
+}
+
+.right-container-block img {
+    width: 100%;
+    height: auto;
+}
+
+.right-container-block span {
+    font-family: 'CeraProModern500', sans-serif;
+}
+
+
+.btn-container {
     text-align: center;
-    padding: 5px  20px 20px 20px;
-}
-
-#disable-modal {
-    display: none;
-}
-
-#error-modal {
-    display: block;
-}
-
-#enabled-modal {
-    display: none;
-    border-radius: 3px;
-    width: 365px;
-    max-width: 365px;
-}
-
-#enabled-modal .modal-header {
-    font-size: 20px;
-    font-weight: 400;
-    padding: 11px 40px;
-}
-
-#enabled-modal .modal-text {
-    font-size: 16px;
-    padding-top: 0;
-}
-
-.close-btn {
-    position: absolute;
-    right: 7px;
-    border-radius: 13px;
-    top: 50%;
-    margin-top: -13px;
-    width: 26px;
-    height: 26px;
-    display: flex;
-    z-index: 10;
-    cursor: pointer;
-}
-
-.close-btn svg {
-    margin: auto;
-}
-
-.close-btn:focus, .close-btn:active {
-    background: #e6e6e6;
-}
-
-.button-container {
-    padding: 0 20px;
+    margin: 60px 20px 0 20px;
 }
 
 .btn {
@@ -436,7 +226,7 @@ body {
     transition: background .15s ease;
     text-transform: uppercase;
     display: inline-block;
-    max-width: 350px;
+    max-width: 320px;
 }
 
 .btn-primary {
@@ -448,68 +238,14 @@ body {
     background-color: #0CACEB;
 }
 
-.btn-white {
-    background: white;
-    color: #333333;
-    margin-top: 5px;
-}
-
-.btn-white:focus, .btn-white:hover, .btn-white:active {
-    background-color: #e6e6e6;
-}
-
-.btn-transparent {
-    background: white;
-    color: #00A0DF;
-}
-
-.btn-transparent:focus, .btn-transparent:hover, .btn-transparent:active {
-    color: #0CACEB;
-    background: #e6e6e6;
-}
-
 .mobile, .tablet {
     display: none;
 }
 
-.folder-icon-container {
-    width: 70px;
-    height: 54px;
-    margin: 0 auto 12px auto
-}
-
-.fb {
-    background-image: url("../images/facebook_folder.svg");
-}
-
-.db {
-    background-image: url("../images/dropbox_folder.svg");
-}
-
-.box {
-    background-image: url("../images/box_folder.svg");
-}
-
-.gd {
-    background-image: url("../images/googledrive_folder.svg");
-}
-
-.gp {
-    background-image: url("../images/googlephotos_folder.svg");
-}
-
-.od {
-    background-image: url("../images/onedrive_folder.svg");
-}
-
-@media screen and (min-width: 768px) and (max-width: 1023px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
 
     .mycloud-logo {
         padding: 5px 0 0 7px;
-    }
-
-    .modal .close-btn {
-        display: none;
     }
 
     .title {
@@ -517,15 +253,36 @@ body {
     }
 
     .content {
-        font-size: 18px;
+        padding: 0 25px;
     }
 
-    .social-container {
-        width: 33%;
+    .content:last-of-type {
+        margin: 20px auto 40px auto;
     }
 
-    .social-containers {
+    .containers {
+        margin: 0 10px;
+        width: inherit;
+        flex-direction: column-reverse;
         flex-wrap: wrap;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .container:first-of-type {
+        margin-top: 40px;
+    }
+
+    .container-content-wrapper img {
+        width: 100%;
+        height: auto;
+    }
+
+
+    .btn-container {
+        margin-top: 35px;
     }
 
     .btn {
@@ -539,22 +296,10 @@ body {
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
 
-    #enabled-modal {
-        max-width: 300px;
-    }
-
-    .modal .close-btn {
-        display: none;
-    }
-
     .mycloud-logo-container {
         width: 60px;
         height: 48px;
         overflow: hidden;
-    }
-
-    .g-layout {
-        padding-bottom: 60px;
     }
 
     .mycloud-logo-text {
@@ -571,72 +316,52 @@ body {
         padding: 5px 0 0 7px;
     }
 
+    .alexa-logo-container {
+        margin-top: 15px;
+    }
+
     .title {
         font-size: 30px;
-        padding: 22px 0;
+        padding: 10px 0 22px 0;
     }
 
     .content {
+        display: none;
         font-size: 16px;
         padding: 0 16px;
     }
 
-    .socialcloudimport-logo-container img {
-        height: 72px;
-    }
-
-    .social-containers {
+    .containers {
         margin: 0 10px;
         width: inherit;
-    }
-
-    .social-container {
-        width: 100%;
-        height: 80px;
-        border-bottom: 1px solid #e0e0e0;
-    }
-
-    .social-containers {
+        flex-direction: column-reverse;
         flex-wrap: wrap;
     }
 
-    .social-container-content-wrapper {
+    .container {
+        width: 100%;
+    }
+
+    .container:first-of-type {
+        margin-top: 40px;
+    }
+
+    .container-content-wrapper {
         padding: 0;
     }
 
-    .social-container-content-wrapper h4 {
-        position: absolute;
-        left: 80px;
-        top: 18px;
-        font-size: 18px;
+    .container-content-wrapper img {
+        width: 100%;
+        height: auto;
     }
 
-    .social-container-content-wrapper .container-logo {
-        position: absolute;
-        left: 10px;
-        top: 10px;
+
+    .btn-container {
+        margin-top: 35px;
     }
 
-    .preloader-container {
-        position: absolute;
-        right: 72px;
-        top: 26px;
-    }
-
-    .user-data {
-        position: absolute;
-        left: 80px;
-        top: 35px;
-    }
-
-    .checkbox-container {
-        position: absolute;
-        right: 10px;
-        top: 15px;
-    }
-
-    .socialcloudimport-logo {
-        width: 50%;
+    .alexa-logo-container .alexa-logo {
+        height: 70px;
     }
 
     .tablet, .desktop {
