@@ -183,7 +183,7 @@ body {
 
 .container p {
     margin-top: 4px;
-    line-height: 1.5;
+    line-height: 20px;
 }
 
 .container p a, .content a {
