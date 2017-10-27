@@ -226,7 +226,7 @@ body {
 }
 
 .mobile, .tablet {
-    display: none;
+    display: none!important;;
 }
 
 .succes-page .g-container {
@@ -339,11 +339,11 @@ only screen and (        min-device-pixel-ratio: 2) {
     }
 
     .mobile, .desktop {
-        display: none;
+        display: none!important;;
     }
 
     .tablet {
-        display: block;
+        display: block!important;
     }
 }
 
@@ -482,11 +482,11 @@ only screen and (        min-device-pixel-ratio: 2) and (min-width: 768px) and (
     }
 
     .tablet, .desktop {
-        display: none;
+        display: none!important;;
     }
 
     .mobile {
-        display: block;
+        display: block!important;;
     }
 }
 
