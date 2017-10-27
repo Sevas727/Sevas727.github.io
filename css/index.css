@@ -166,7 +166,7 @@ body {
     padding: 0;
     height: 350px;
     width: 100%;
-    /*background-size: contain;*/
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: top center;
 }
@@ -281,6 +281,10 @@ only screen and (        min-device-pixel-ratio: 2) {
         background-image: url(../images/sonos_image5_desktop@2x.png);
     }
 
+    .content-image-container {
+        height: 696px;
+    }
+
     .sonos-succes-image-block {
         background-image: url("../images/sonos_successimg_desktop@2x.png");
     }
@@ -316,6 +320,7 @@ only screen and (        min-device-pixel-ratio: 2) {
     .container {
         width: 50%;
         max-width: inherit;
+        padding-bottom: 50px;
     }
 
     .container p {
@@ -457,6 +462,7 @@ only screen and (        min-device-pixel-ratio: 2) and (min-width: 768px) and (
     .container {
         width: 100%;
         max-width: inherit;
+        padding-bottom: 50px;
     }
 
     .content-image-container {
