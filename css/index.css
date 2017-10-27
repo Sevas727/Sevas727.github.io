@@ -159,14 +159,14 @@ body {
 }
 
 .head-of-container {
-    height: 125px;
+    height: 115px;
 }
 
 .content-image-container {
     padding: 0;
     height: 350px;
     width: 100%;
-    background-size: contain;
+    /*background-size: contain;*/
     background-repeat: no-repeat;
     background-position: top center;
 }
@@ -422,6 +422,10 @@ only screen and (        min-device-pixel-ratio: 2) and (min-width: 768px) and (
         padding: 0 16px;
     }
 
+    .content-image-container {
+        height: 224px;
+    }
+
     .content:last-of-type {
         margin: 20px auto 40px auto;
     }
@@ -452,6 +456,7 @@ only screen and (        min-device-pixel-ratio: 2) and (min-width: 768px) and (
 
     .container {
         width: 100%;
+        max-width: inherit;
     }
 
     .content-image-container {
