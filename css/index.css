@@ -492,6 +492,11 @@ only screen and (        min-device-pixel-ratio: 2) and (min-width: 768px) and (
         background-image: url("../images/sonos_successimg_mobile.png");
     }
 
+    .head-of-container {
+        height: auto;
+        padding-bottom: 15px;
+    }
+
     .tablet, .desktop {
         display: none;
     }
