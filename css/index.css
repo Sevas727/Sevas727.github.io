@@ -172,6 +172,9 @@ body {
     background-position: top center;
 }
 
+.sonos-succes-image-block img {
+    margin: 0 auto;
+}
 
 .container:last-of-type {
     padding-bottom: 0;
@@ -235,7 +238,7 @@ padding: 0;
 
 .succes-image-block {
     text-align: center;
-    margin: 25px auto 25px auto;
+    margin: 25px auto 15px auto;
 }
 
 .succes-image-block svg {
@@ -247,14 +250,15 @@ padding: 0;
 }
 
 .sonos-succes-image-block {
-    margin: 0 auto;
-    width: 100%;
-    max-width: 1024px;
-    height: 743px;
-    background-repeat: no-repeat;
-    background-image: url("../images/sonos_successimg_desktop.png");
-    background-position: bottom center;
-    background-size: contain;
+    text-align: center;
+    /*margin: 0 auto;*/
+    /*width: 100%;*/
+    /*max-width: 1024px;*/
+    /*height: 743px;*/
+    /*background-repeat: no-repeat;*/
+    /*background-image: url("../images/sonos_successimg_desktop.png");*/
+    /*background-position: bottom center;*/
+    /*background-size: contain;*/
 }
 
 @media
@@ -282,7 +286,7 @@ only screen and (        min-device-pixel-ratio: 2) {
         background-image: url(../images/sonos_image5_desktop@2x.png);
     }
     .sonos-succes-image-block {
-        background-image: url("../images/sonos_successimg_desktop@2x.png");
+        /*background-image: url("../images/sonos_successimg_desktop@2x.png");*/
     }
 }
 
@@ -349,11 +353,15 @@ only screen and (        min-device-pixel-ratio: 2) {
     }
 
     .sonos-succes-image-block {
-        background-image: url("../images/sonos_successimg_tablet.png");
+
     }
 
     .mobile, .desktop {
         display: none;
+    }
+
+    .tablet {
+        display: block;
     }
 }
 
@@ -382,7 +390,7 @@ only screen and (        min-device-pixel-ratio: 2) and (min-width: 768px) and (
     }
 
     .sonos-succes-image-block {
-        background-image: url("../images/sonos_successimg_tablet@2x.png");
+        /*background-image: url("../images/sonos_successimg_tablet@2x.png");*/
     }
 }
 
@@ -485,8 +493,8 @@ only screen and (        min-device-pixel-ratio: 2) and (min-width: 768px) and (
     }
 
     .sonos-succes-image-block {
-        height: 391px;
-        background-image: url("../images/sonos_successimg_mobile.png");
+        /*height: 391px;*/
+        /*background-image: url("../images/sonos_successimg_mobile.png");*/
     }
 
     .head-of-container {
@@ -501,6 +509,10 @@ only screen and (        min-device-pixel-ratio: 2) and (min-width: 768px) and (
 
     .tablet, .desktop {
         display: none;
+    }
+
+    .mobile {
+        display: block;
     }
 }
 
@@ -530,7 +542,7 @@ only screen and (        min-device-pixel-ratio: 2)       and (min-width: 320px)
     }
 
     .sonos-succes-image-block {
-        background-image: url("../images/sonos_successimg_mobile@2x.png");
+        /*background-image: url("../images/sonos_successimg_mobile@2x.png");*/
     }
 
 }
