@@ -12,11 +12,13 @@
       };
       var localizedStrings = {};
       var localeEnStrings = {
-        myCloudServices: 'My Cloud Services',
-        title: 'Alexa Connection Successfull',
-        content1: 'Your My Cloud Home is now successfully connected with Alexa service.',
-        content2: 'You may close this page or continue with ',
-        myCloudHomeOnline: 'My Cloud Home Online.',
+            myCloudServices: 'My Cloud Services',
+            title: 'Sonos Connection Successfull',
+            content1: 'Your My Cloud Home is now successfully connected with Sonos.',
+            returnToYour: 'Return to your Sonos app',
+            and: ' and ',
+            selectMyCloudHome: 'select My Cloud Home ',
+            toStart: 'to start listnening to your music.',
       };
 
       function setLocale() {
@@ -83,9 +85,9 @@
                 <div class="mycloud-logo-container">
                     <img class="mycloud-logo" src="./images/mycloudservices_logo.svg" alt="My Cloud Logo">
                 </div>
-                <div class="alexa-logo-container">
+                <div class="sonos-logo-container">
                     <a href="#">
-                        <img class="alexa-logo" src="./images/alexa.svg" alt="Social Cloud Logo">
+                        <img class="sonos-logo" src="./images/sonos.svg" alt="Social Cloud Logo">
                     </a>
                 </div>
             </header>
@@ -93,6 +95,12 @@
             <main>
                 <h1 class="title"><script language="javascript">document.write(localizedStrings.title)</script></h1>
                 <p class="content"><script language="javascript">document.write(localizedStrings.content1)</script></p>
+                <p class="content">
+                    <span><script language="javascript">document.write(localizedStrings.content1)</script></span>
+                    <script language="javascript">document.write(localizedStrings.and)</script>
+                    <span><script language="javascript">document.write(localizedStrings.selectMyCloudHome)</script></span>
+                    <script language="javascript">document.write(localizedStrings.toStart)</script>
+                </p>
                 <div class="succes-image-block">
                     <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" version="1.1" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd"
                         viewBox="0 0 200 200"
@@ -104,7 +112,7 @@
                          </g>
                     </svg>
                 </div>
-                <p class="content"><script language="javascript">document.write(localizedStrings.content2)</script> <a href="#"><script language="javascript">document.write(localizedStrings.myCloudHomeOnline)</script></a></p>
+                <div class="sonos-succes-image-block"></div>
             </main>
         </div>
     </div>

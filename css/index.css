@@ -106,16 +106,16 @@ body {
     padding: 6px 0 0 16px;
 }
 
-.alexa-logo-container {
+.sonos-logo-container {
     text-align: center;
 }
 
-.alexa-logo-container img {
+.sonos-logo-container h1 {
     height: 96px;
     width: auto;
 }
 
-.alexa-logo {
+.sonos-logo {
     margin: 0 auto;
 }
 
@@ -126,14 +126,14 @@ body {
 }
 
 .content {
-    max-width: 1200px;
+    max-width: 1024px;
     margin: 0 auto;
     text-align: center;
     padding: 0 10px;
 }
 
 .content:last-of-type {
-    margin: 20px auto 40px auto;
+    margin: 20px auto 60px auto;
 }
 
 .containers {
@@ -149,112 +149,141 @@ body {
     flex-flow: row;
     -webkit-flex-flow: row;
     justify-content: space-around;
-    line-height:30px;
     max-width: 1200px;
 }
 
 .container {
-    flex: 1;
     text-align: center;
-    padding: 0 20px;
-}
-
-.container-content-wrapper {
-    position: relative;
-    width: 100%;
-    height: 100%;
-}
-
-.container-content-wrapper img {
-    max-width: 568px;
-}
-
-.right-container-block {
     padding-bottom: 25px;
+    max-width: 200px;
 }
 
-.right-container-block:last-of-type {
+.head-of-container {
+    height: 125px;
+}
+
+.content-image-container {
+    padding: 0;
+    height: 350px;
+    width: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+
+.container:last-of-type {
     padding-bottom: 0;
 }
 
-.right-container-block p {
+.container p {
     margin-top: 4px;
-    line-height: 20px;
+    line-height: 1.5;
 }
 
-.right-container-block p a, .content a {
+.container p a, .content a {
     color: #00A0DF;
     text-decoration: none;
     font-family: 'CeraProModern500', sans-serif;
 }
 
-.right-container-block p a:hover, .content a {
+.container p a:hover, .content a {
     color: #0CACEB;
 }
 
-.right-container-block img {
+.container img {
     width: 100%;
     height: auto;
 }
 
-.right-container-block span {
+.container span, .content span {
     font-family: 'CeraProModern500', sans-serif;
 }
 
-
-.btn-container {
-    text-align: center;
-    margin: 30px 20px 0 20px;
+.container:first-of-type .content-image-container {
+    background-image: url(../images/sonos_image1_desktop.png);
 }
 
-.btn {
-    font-family: 'CeraProModern500', sans-serif;
-    background: none;
-    padding: 12px 10px;
-    line-height: 100%;
-    text-align: center;
-    width: 100%;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    -webkit-border-radius: 4px;
-    border-radius: 4px;
-    -webkit-box-shadow: none;
-    box-shadow: none;
-    border: none;
-    -webkit-appearance: none;
-    font-weight: 500;
-    font-size: 16px;
-    cursor: pointer;
-    outline: none;
-    position: relative;
-    -webkit-transition: background .15s ease;
-    -o-transition: background .15s ease;
-    transition: background .15s ease;
-    text-transform: uppercase;
-    display: inline-block;
-    max-width: 320px;
+.container:nth-of-type(2) .content-image-container {
+    background-image: url(../images/sonos_image2_desktop.png);
 }
 
-.btn-primary {
-    background: #00A0DF;
-    color: #fff;
+.container:nth-of-type(3) .content-image-container {
+    background-image: url(../images/sonos_image3_desktop.png);
 }
 
-.btn-primary:hover {
-    background-color: #0CACEB;
+.container:nth-of-type(4) .content-image-container {
+    background-image: url(../images/sonos_image4_desktop.png);
+}
+
+.container:nth-of-type(5) .content-image-container {
+    background-image: url(../images/sonos_image5_desktop.png);
 }
 
 .mobile, .tablet {
     display: none;
 }
 
+.succes-page .g-container {
+padding: 0;
+}
+
+.succes-page .content:last-of-type {
+    margin: 20px auto 25px auto;
+}
+
 .succes-image-block {
     text-align: center;
-    margin: 40px auto 40px auto;
+    margin: 25px auto 25px auto;
 }
 
 .succes-image-block svg {
     width: 65px;
+}
+
+.succes-page .content:first-of-type {
+    margin-bottom: 20px;
+}
+
+.sonos-succes-image-block {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1024px;
+    height: 743px;
+    background-repeat: no-repeat;
+    background-image: url("../images/sonos_successimg_desktop.png");
+    background-position: bottom center;
+    background-size: contain;
+}
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2) {
+    .container:first-of-type .content-image-container {
+        background-image: url(../images/sonos_image1_desktop@2x.png);
+    }
+
+    .container:nth-of-type(2) .content-image-container {
+        background-image: url(../images/sonos_image2_desktop@2x.png);
+    }
+
+    .container:nth-of-type(3) .content-image-container {
+        background-image: url(../images/sonos_image3_desktop@2x.png);
+    }
+
+    .container:nth-of-type(4) .content-image-container {
+        background-image: url(../images/sonos_image4_desktop@2x.png);
+    }
+
+    .container:nth-of-type(5) .content-image-container {
+        background-image: url(../images/sonos_image5_desktop@2x.png);
+    }
+
+    .sonos-succes-image-block {
+        background-image: url("../images/sonos_successimg_desktop@2x.png");
+    }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1025px) {
@@ -268,11 +297,7 @@ body {
     }
 
     .content {
-        font-size: 18px;
         padding: 0 25px;
-    }
-
-    .right-container-block p {
         font-size: 18px;
     }
 
@@ -283,30 +308,81 @@ body {
     .containers {
         margin: 0 25px;
         width: inherit;
-        flex-direction: column-reverse;
+        flex-direction: row;
         flex-wrap: wrap;
+        justify-content: flex-start;
     }
 
-    .container:first-of-type {
-        margin-top: 40px;
+    .container {
+        width: 50%;
+        max-width: inherit;
     }
 
-    .container-content-wrapper img {
+    .container p {
+        font-size: 18px;
+    }
+
+    .content-image-container img {
         width: 100%;
         height: auto;
     }
 
-
-    .btn-container {
-        margin-top: 35px;
+    .container:first-of-type .content-image-container {
+        background-image: url(../images/sonos_image1_tablet.png);
     }
 
-    .btn {
-        font-size: 18px;
+    .container:nth-of-type(2) .content-image-container {
+        background-image: url(../images/sonos_image2_tablet.png);
+    }
+
+    .container:nth-of-type(3) .content-image-container {
+        background-image: url(../images/sonos_image3_tablet.png);
+    }
+
+    .container:nth-of-type(4) .content-image-container {
+        background-image: url(../images/sonos_image4_tablet.png);
+    }
+
+    .container:nth-of-type(5) .content-image-container {
+        background-image: url(../images/sonos_image5_tablet.png);
+    }
+
+    .sonos-succes-image-block {
+        height: 508px;
+        background-image: url("../images/sonos_successimg_tablet.png");
     }
 
     .mobile, .desktop {
         display: none;
+    }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 768px) and (max-width: 1025px),
+only screen and (   min--moz-device-pixel-ratio: 2) and (min-width: 768px) and (max-width: 1025px),
+only screen and (     -o-min-device-pixel-ratio: 2/1) and (min-width: 768px) and (max-width: 1025px),
+only screen and (        min-device-pixel-ratio: 2) and (min-width: 768px) and (max-width: 1025px) {
+    .container:first-of-type .content-image-container {
+        background-image: url(../images/sonos_image1_tablet@2x.png);
+    }
+
+    .container:nth-of-type(2) .content-image-container {
+        background-image: url(../images/sonos_image2_tablet@2x.png);
+    }
+
+    .container:nth-of-type(3) .content-image-container {
+        background-image: url(../images/sonos_image3_tablet@2x.png);
+    }
+
+    .container:nth-of-type(4) .content-image-container {
+        background-image: url(../images/sonos_image4_tablet@2x.png);
+    }
+
+    .container:nth-of-type(5) .content-image-container {
+        background-image: url(../images/sonos_image5_tablet@2x.png);
+    }
+
+    .sonos-succes-image-block {
+        background-image: url("../images/sonos_successimg_tablet@2x.png");
     }
 }
 
@@ -332,7 +408,7 @@ body {
         padding: 5px 0 0 7px;
     }
 
-    .alexa-logo-container {
+    .sonos-logo-container {
         margin-top: 15px;
     }
 
@@ -344,6 +420,14 @@ body {
     .content {
         font-size: 16px;
         padding: 0 16px;
+    }
+
+    .content:last-of-type {
+        margin: 20px auto 40px auto;
+    }
+
+    .succes-page .content:last-of-type {
+        margin: 20px 25px 25px 25px;
     }
 
     .succes-page .content {
@@ -358,40 +442,82 @@ body {
         margin: 30px auto;
     }
 
-    .succes-image-block svg {
-        width: 50px;
-    }
-
     .containers {
         margin: 0 10px;
         width: inherit;
-        flex-direction: column-reverse;
-        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
-    .container:first-of-type {
-        margin-top: 40px;
+    .container {
+        width: 100%;
     }
 
-    .container-content-wrapper {
+    .content-image-container {
         padding: 0;
     }
 
-    .container-content-wrapper img {
-        width: 100%;
-        height: auto;
-    }
-
-
-    .btn-container {
-        margin-top: 35px;
-    }
-
-    .alexa-logo-container .alexa-logo {
+    .sonos-logo-container .sonos-logo {
         height: 70px;
+    }
+
+    .container:first-of-type .content-image-container {
+        background-image: url(../images/sonos_image1_mobile.png);
+    }
+
+    .container:nth-of-type(2) .content-image-container {
+        background-image: url(../images/sonos_image2_mobile.png);
+    }
+
+    .container:nth-of-type(3) .content-image-container {
+        background-image: url(../images/sonos_image3_mobile.png);
+    }
+
+    .container:nth-of-type(4) .content-image-container {
+        background-image: url(../images/sonos_image4_mobile.png);
+    }
+
+    .container:nth-of-type(5) .content-image-container {
+        background-image: url(../images/sonos_image5_mobile.png);
+    }
+
+    .sonos-succes-image-block {
+        height: 391px;
+        background-image: url("../images/sonos_successimg_mobile.png");
     }
 
     .tablet, .desktop {
         display: none;
+    }
+}
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2)       and (min-width: 320px) and (max-width: 767px),
+only screen and (   min--moz-device-pixel-ratio: 2)       and (min-width: 320px) and (max-width: 767px),
+only screen and (     -o-min-device-pixel-ratio: 2/1)     and (min-width: 320px) and (max-width: 767px),
+only screen and (        min-device-pixel-ratio: 2)       and (min-width: 320px) and (max-width: 767px) {
+    .container:first-of-type .content-image-container {
+        background-image: url(../images/sonos_image1_mobile@2x.png);
+    }
+
+    .container:nth-of-type(2) .content-image-container {
+        background-image: url(../images/sonos_image2_mobile@2x.png);
+    }
+
+    .container:nth-of-type(3) .content-image-container {
+        background-image: url(../images/sonos_image3_mobile@2x.png);
+    }
+
+    .container:nth-of-type(4) .content-image-container {
+        background-image: url(../images/sonos_image4_mobile@2x.png);
+    }
+
+    .container:nth-of-type(5) .content-image-container {
+        background-image: url(../images/sonos_image5_mobile@2x.png);
+    }
+
+    .sonos-succes-image-block {
+        background-image: url("../images/sonos_successimg_mobile@2x.png");
     }
 }

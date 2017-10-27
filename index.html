@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>My Cloud Alexa</title>
+    <title>My Cloud Social and Cloud Import</title>
     <link rel="stylesheet" href="./css/index.css">
     <script language="javascript">
       window.onload = function() {
@@ -13,24 +13,25 @@
       var localizedStrings = {};
       var localeEnStrings = {
         myCloudServices: 'My Cloud Services',
-        title: 'Connect Amazon Alexa',
-        content1: 'Alexa is an intelligent personal assistant which is capable of voice interaction, music playback, ' +
-        'making to-do lists, setting alarms, streaming podcasts, playing audiobooks and other. Alexa can also control ' +
-        'several smart devices using itself as a home automation system.',
-        content2: 'You can stream and listen music stored on your My Cloud Home device from Alexa enabled device like Echo or Echo Dot.',
-        findOur: 'Find our',
-        toGet: 'to get My Cloud Home skill.',
-        amazAlexMob: 'Amazon Alexa mobile app',
-        orUse: 'or use',
-        alexaSkillCat: 'Alexa Skill Catalog',
-        enableThisSkill: 'Enable this skill',
-        withYourCred: 'with your My Cloud Home credentials.',
-        and: 'and',
-        signIn: 'sign in',
-        myCloudHomeSc: 'My Cloud Home skill',
-        streamAndListen: 'Stream and listen music',
-        storedIn: 'stored on your My Cloud Home device from Alexa enabled device like Echo or Echo Dot.',
-        goBtn: 'Go to My cloud home skill'
+        title: 'Connect Sonos',
+        content1: 'Sonos is the wireless Home Sound System that fills as many rooms as you want with great-sounding music, movies, and TV. Stream via WiFi. Play whatever you’re craving.',
+        content2: 'Connect your My Cloud Home device with your Sonos app to browse and play songs by track, artist, album, and more. With support for multiple My Cloud accounts, the whole family can feel the beat.',
+        signIn: 'Sign In',
+        signInTo: 'Sign into',
+        the: ' the ',
+        sonApp: 'Sonos app',
+        andTap: 'and tap the',
+        menuBtn: 'menu button.',
+        select: 'Select',
+        addMusicServ: '\"Add Music Services\".',
+        choose: 'Choose',
+        myCloudHome: 'My Cloud Home',
+        fromTheList: 'from the list.',
+        tap: 'Tap ',
+        addToSon: '\"Add To Sonos\"',
+        btn: ' button.',
+        your: ' your ',
+        acc: ' account.',
       };
 
       function setLocale() {
@@ -97,9 +98,9 @@
                 <div class="mycloud-logo-container">
                     <img class="mycloud-logo" src="./images/mycloudservices_logo.svg" alt="My Cloud Logo">
                 </div>
-                <div class="alexa-logo-container">
+                <div class="sonos-logo-container">
                     <a href="#">
-                        <img class="alexa-logo" src="./images/alexa.svg" alt="Alexa">
+                        <img class="sonos-logo" src="./images/sonos.svg" alt="Sonos">
                     </a>
                 </div>
             </header>
@@ -111,79 +112,113 @@
                 <div class="containers">
 
                     <!--CONTAINER-->
-                    <div class="container">
-                        <div class="container-content-wrapper">
-                            <img class="container-logo" src="./images/alexa_imagedevices.svg" />
-                        </div>
-                    </div>
 
-                    <div class="container">
-                        <div class="container-content-wrapper">
-                            <div class="right-container-block">
-                                <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="48px" height="48px" version="1.1" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd"
-                                    viewBox="0 0 480 480"
-                                     xmlns:xlink="http://www.w3.org/1999/xlink">
-                                     <g id="Layer_x0020_1">
-                                      <metadata id="s"/>
-                                      <circle fill="black" cx="240" cy="240" r="240"/>
-                                      <circle fill="white" cx="240" cy="240" r="220"/>
-                                      <circle fill="#00CAFF" cx="240" cy="240" r="195"/>
-                                      <polygon fill="white" points="261,143 261,337 230,337 230,180 190,192 183,165 250,143 "/>
-                                     </g>
-                                </svg>
-                                <p>
-                                    <script language="javascript">document.write(localizedStrings.findOur)</script>
-                                    <span><script language="javascript">document.write(localizedStrings.myCloudHomeSc)</script></span>
-                                    <a href="https://owa.luxoft.com/owa/redir.aspx?C=Ys0ChaYDhc10EjSR7rMsO2EVs1PXYhGT2wyH0O-YTvBLV0vHRhzVCA..&URL=https%3a%2f%2fwww.amazon.com%2fs%2fref%3dnb_sb_noss%3furl%3dsearch-alias%253Dalexa-skills%26field-keywords"><script language="javascript">document.write(localizedStrings.alexaSkillCat)</script></a>
-                                    <script language="javascript">document.write(localizedStrings.orUse)</script>
-                                    <a href="https://itunes.apple.com/us/app/amazon-alexa/id944011620?mt=8"><script language="javascript">document.write(localizedStrings.amazAlexMob)</script></a>
-                                    <script language="javascript">document.write(localizedStrings.toGet)</script>
-                                </p>
+                            <div class="container">
+                                <div class="head-of-container">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="48px" height="48px" version="1.1" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd"
+                                        viewBox="0 0 480 480"
+                                         xmlns:xlink="http://www.w3.org/1999/xlink">
+                                         <g id="Layer_x0020_1">
+                                          <metadata id="s"/>
+                                          <circle fill="black" cx="240" cy="240" r="240"/>
+                                          <circle fill="white" cx="240" cy="240" r="220"/>
+                                          <polygon fill="black" points="265,132 265,326 234,326 234,169 195,182 187,154 254,132 "/>
+                                         </g>
+                                    </svg>
+                                    <p>
+                                        <span><script language="javascript">document.write(localizedStrings.signInTo)</script></span>
+                                        <script language="javascript">document.write(localizedStrings.the)</script>
+                                        <a href="#"><script language="javascript">document.write(localizedStrings.sonApp)</script></a>
+                                        <script language="javascript">document.write(localizedStrings.andTap)</script>
+                                        <span><script language="javascript">document.write(localizedStrings.menuBtn)</script></span>
+                                    </p>
+                                </div>
+                                <div class="content-image-container"></div>
                             </div>
 
-                            <div class="right-container-block">
-                                <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="48px" height="48px" version="1.1" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd"
-                                    viewBox="0 0 480 480"
-                                     xmlns:xlink="http://www.w3.org/1999/xlink">
-                                     <g id="Layer_x0020_1">
-                                      <metadata id="s"/>
-                                      <circle fill="black" cx="240" cy="240" r="240"/>
-                                      <circle fill="white" cx="240" cy="240" r="220"/>
-                                      <circle fill="#00CAFF" cx="240" cy="240" r="195"/>
-                                      <path fill="white" d="M305 310l0 27 -139 0 0 -7 69 -74c11,-12 19,-22 24,-29 5,-8 7,-16 7,-25 0,-9 -3,-17 -9,-24 -6,-6 -13,-10 -23,-10 -10,0 -18,4 -24,11 -6,6 -9,15 -9,25 0,4 0,9 1,15l-31 0c-1,-6 -2,-11 -2,-17 0,-11 3,-21 8,-30 5,-10 13,-17 23,-23 9,-6 21,-9 34,-9 12,0 23,3 33,8 10,5 17,12 23,21 5,10 8,20 8,31 0,13 -3,25 -10,36 -7,11 -17,23 -31,38l-34 36 82 0z"/>
-                                     </g>
-                                </svg>
-                                <p>
-                                    <span><script language="javascript">document.write(localizedStrings.enableThisSkill)</script></span>
-                                    <script language="javascript">document.write(localizedStrings.and)</script>
-                                    <span><script language="javascript">document.write(localizedStrings.signIn)</script></span>
-                                    <script language="javascript">document.write(localizedStrings.withYourCred)</script>
-                                </p>
+                            <div class="container">
+                                <div class="head-of-container">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="48px" height="48px" version="1.1" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd"
+                                        viewBox="0 0 480 480"
+                                         xmlns:xlink="http://www.w3.org/1999/xlink">
+                                         <g id="Layer_x0020_1">
+                                          <metadata id="s"/>
+                                          <circle fill="black" cx="240" cy="240" r="240"/>
+                                          <circle fill="white" cx="240" cy="240" r="220"/>
+                                          <path fill="black" d="M310 299l0 27 -139 0 0 -7 69 -74c11,-12 19,-21 24,-29 5,-8 7,-16 7,-24 0,-10 -3,-18 -9,-25 -6,-6 -13,-9 -23,-9 -10,0 -18,3 -24,10 -6,7 -9,15 -9,25 0,4 0,9 1,15l-31 0c-1,-5 -2,-11 -2,-17 0,-10 3,-20 8,-30 5,-9 13,-17 23,-23 9,-6 21,-9 34,-9 12,0 23,3 33,8 10,5 17,13 23,22 5,9 8,19 8,30 0,13 -3,25 -10,36 -7,11 -17,24 -31,38l-34 36 82 0z"/>
+                                         </g>
+                                    </svg>
+                                    <p>
+                                        <script language="javascript">document.write(localizedStrings.select)</script>
+                                        <span><script language="javascript">document.write(localizedStrings.addMusicServ)</script></span>
+                                    </p>
+                                </div>
+                                <div class="content-image-container"></div>
                             </div>
 
-                            <div class="right-container-block">
-                                <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="48px" height="48px" version="1.1" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd"
-                                    viewBox="0 0 480 480"
-                                     xmlns:xlink="http://www.w3.org/1999/xlink">
-                                     <g id="Layer_x0020_1">
-                                      <metadata id="d"/>
-                                      <circle fill="black" cx="240" cy="240" r="240"/>
-                                      <circle fill="white" cx="240" cy="240" r="220"/>
-                                      <circle fill="#00CAFF" cx="240" cy="240" r="195"/>
-                                      <path fill="white" d="M260 215c14,2 26,9 36,19 10,10 15,24 15,41 0,13 -3,24 -9,34 -7,10 -15,18 -26,23 -11,5 -23,8 -35,8 -16,0 -30,-4 -41,-12 -12,-7 -21,-17 -27,-30l21 -15c6,9 13,16 20,21 7,5 16,8 26,8 11,0 21,-4 28,-11 8,-6 11,-15 11,-26 0,-11 -4,-19 -11,-25 -8,-6 -19,-9 -33,-9l-22 0 0 -9 45 -60 -72 0 0 -29 121 0 0 9 -47 63z"/>
-                                     </g>
-                                </svg>
-                                <p>
-                                    <span><script language="javascript">document.write(localizedStrings.streamAndListen)</script></span>
-                                    <script language="javascript">document.write(localizedStrings.storedIn)</script>
-                                </p>
+                            <div class="container">
+                                <div class="head-of-container">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="48px" height="48px" version="1.1" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd"
+                                        viewBox="0 0 480 480"
+                                         xmlns:xlink="http://www.w3.org/1999/xlink">
+                                         <g id="Layer_x0020_1">
+                                          <metadata id="s"/>
+                                          <circle fill="black" cx="240" cy="240" r="240"/>
+                                          <circle fill="white" cx="240" cy="240" r="220"/>
+                                          <path fill="black" d="M256 204c14,3 26,9 36,19 10,11 15,24 15,41 0,13 -3,24 -10,34 -6,10 -15,18 -26,23 -10,6 -22,8 -35,8 -15,0 -29,-4 -41,-11 -11,-8 -20,-18 -27,-31l22 -15c6,9 12,16 20,21 7,5 15,8 25,8 12,0 21,-4 29,-10 7,-7 11,-16 11,-27 0,-11 -4,-19 -12,-25 -7,-6 -18,-9 -33,-9l-21 0 0 -8 45 -61 -72 0 0 -29 121 0 0 9 -47 63z"/>
+                                         </g>
+                                    </svg>
+                                    <p>
+                                        <script language="javascript">document.write(localizedStrings.choose)</script>
+                                        <span><script language="javascript">document.write(localizedStrings.myCloudHome)</script></span>
+                                        <script language="javascript">document.write(localizedStrings.fromTheList)</script>
+                                    </p>
+                                </div>
+                                <div class="content-image-container"></div>
                             </div>
-                        </div>
-                    </div>
 
-                </div>
-                <div class="btn-container">
-                    <a class="btn btn-primary" href="#"><script language="javascript">document.write(localizedStrings.goBtn)</script></a>
+                            <div class="container">
+                                <div class="head-of-container">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="48px" height="48px" version="1.1" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd"
+                                        viewBox="0 0 480 480"
+                                         xmlns:xlink="http://www.w3.org/1999/xlink">
+                                         <g id="Layer_x0020_1">
+                                          <metadata id="s"/>
+                                          <circle fill="black" cx="240" cy="240" r="240"/>
+                                          <circle fill="white" cx="240" cy="240" r="220"/>
+                                          <polygon fill="black" points="319,292 292,292 292,326 261,326 261,292 165,292 165,284 226,132 258,132 204,266 261,266 261,206 292,206 292,266 319,266 "/>
+                                         </g>
+                                    </svg>
+                                    <p>
+                                        <script language="javascript">document.write(localizedStrings.tap)</script>
+                                        <span><script language="javascript">document.write(localizedStrings.addToSon)</script></span>
+                                        <script language="javascript">document.write(localizedStrings.btn)</script> </p>
+                                </div>
+                                <div class="content-image-container"></div>
+                            </div>
+
+                            <div class="container">
+                                <div class="head-of-container">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="48px" height="48px" version="1.1" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd"
+                                        viewBox="0 0 480 480"
+                                         xmlns:xlink="http://www.w3.org/1999/xlink">
+                                         <g id="Layer_x0020_1">
+                                          <metadata id="s"/>
+                                          <circle fill="black" cx="240" cy="240" r="240"/>
+                                          <circle fill="white" cx="240" cy="240" r="220"/>
+                                          <path fill="black" d="M243 203c12,0 23,2 33,7 10,5 18,12 24,21 6,9 9,20 9,33 0,13 -3,24 -9,34 -7,10 -16,18 -27,23 -10,6 -22,8 -35,8 -16,0 -30,-3 -42,-11 -12,-8 -21,-18 -28,-30l22 -16c6,9 13,16 20,21 8,5 17,8 27,8 12,0 21,-3 29,-10 7,-7 11,-16 11,-27 0,-11 -4,-19 -11,-25 -8,-6 -19,-9 -33,-9l-45 0 0 -98 106 0 0 28 -75 0 0 46c7,-2 15,-3 24,-3z"/>
+                                         </g>
+                                    </svg>
+                                    <p>
+                                        <span><script language="javascript">document.write(localizedStrings.signInTo)</script></span>
+                                        <script language="javascript">document.write(localizedStrings.your)</script>
+                                        <span><script language="javascript">document.write(localizedStrings.myCloudHome)</script></span>
+                                        <script language="javascript">document.write(localizedStrings.acc)</script>
+                                    </p>
+                                </div>
+                                <div class="content-image-container"></div>
+                            </div>
+
                 </div>
             </main>
         </div>

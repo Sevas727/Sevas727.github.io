@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="48px" height="48px" version="1.1" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd"
+viewBox="0 0 480 480"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <g id="Layer_x0020_1">
+  <metadata id="s"/>
+  <circle fill="black" cx="240" cy="240" r="240"/>
+  <circle fill="white" cx="240" cy="240" r="220"/>
+  <path fill="black" d="M243 203c12,0 23,2 33,7 10,5 18,12 24,21 6,9 9,20 9,33 0,13 -3,24 -9,34 -7,10 -16,18 -27,23 -10,6 -22,8 -35,8 -16,0 -30,-3 -42,-11 -12,-8 -21,-18 -28,-30l22 -16c6,9 13,16 20,21 8,5 17,8 27,8 12,0 21,-3 29,-10 7,-7 11,-16 11,-27 0,-11 -4,-19 -11,-25 -8,-6 -19,-9 -33,-9l-45 0 0 -98 106 0 0 28 -75 0 0 46c7,-2 15,-3 24,-3z"/>
+ </g>
+</svg>
