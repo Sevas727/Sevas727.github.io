@@ -221,6 +221,12 @@ body {
     background-image: url(../images/sonos_image5_desktop.png);
 }
 
+
+.content-image-container {
+    width: 125px;
+    height: 226px;
+}
+
 .mobile, .tablet {
     display: none;
 }
@@ -350,11 +356,6 @@ only screen and (        min-device-pixel-ratio: 2) {
 
     .sonos-succes-image-block {
         background-image: url("../images/sonos_successimg_tablet.png");
-    }
-
-    .content-image-container {
-        width: 125px;
-        height: 226px;
     }
 
     .mobile, .desktop {
