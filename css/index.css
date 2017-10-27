@@ -133,7 +133,7 @@ body {
 }
 
 .content:last-of-type {
-    margin: 20px auto 60px auto;
+    margin: 20px auto 30px auto;
 }
 
 .containers {
@@ -163,9 +163,10 @@ body {
 }
 
 .content-image-container {
+    margin: 0 auto;
     padding: 0;
     height: 350px;
-    width: 100%;
+    width: 194px;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: top center;
@@ -280,11 +281,6 @@ only screen and (        min-device-pixel-ratio: 2) {
     .container:nth-of-type(5) .content-image-container {
         background-image: url(../images/sonos_image5_desktop@2x.png);
     }
-
-    .content-image-container {
-        height: 696px;
-    }
-
     .sonos-succes-image-block {
         background-image: url("../images/sonos_successimg_desktop@2x.png");
     }
@@ -327,9 +323,9 @@ only screen and (        min-device-pixel-ratio: 2) {
         font-size: 18px;
     }
 
-    .content-image-container img {
-        width: 100%;
-        height: auto;
+    .content-image-container {
+        width: 388px;
+        height: 698px;
     }
 
     .container:first-of-type .content-image-container {
@@ -353,8 +349,12 @@ only screen and (        min-device-pixel-ratio: 2) {
     }
 
     .sonos-succes-image-block {
-        height: 508px;
         background-image: url("../images/sonos_successimg_tablet.png");
+    }
+
+    .content-image-container {
+        width: 125px;
+        height: 226px;
     }
 
     .mobile, .desktop {
