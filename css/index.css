@@ -221,12 +221,6 @@ body {
     background-image: url(../images/sonos_image5_desktop.png);
 }
 
-
-.content-image-container {
-    width: 125px;
-    height: 226px;
-}
-
 .mobile, .tablet {
     display: none;
 }
@@ -330,8 +324,8 @@ only screen and (        min-device-pixel-ratio: 2) {
     }
 
     .content-image-container {
-        width: 388px;
-        height: 698px;
+        width: 180px;
+        height: 355px;
     }
 
     .container:first-of-type .content-image-container {
@@ -428,10 +422,6 @@ only screen and (        min-device-pixel-ratio: 2) and (min-width: 768px) and (
         padding: 0 16px;
     }
 
-    .content-image-container {
-        height: 224px;
-    }
-
     .content:last-of-type {
         margin: 20px auto 40px auto;
     }
@@ -504,6 +494,11 @@ only screen and (        min-device-pixel-ratio: 2) and (min-width: 768px) and (
         padding-bottom: 15px;
     }
 
+    .content-image-container {
+        width: 125px;
+        height: 226px;
+    }
+
     .tablet, .desktop {
         display: none;
     }
@@ -538,7 +533,4 @@ only screen and (        min-device-pixel-ratio: 2)       and (min-width: 320px)
         background-image: url("../images/sonos_successimg_mobile@2x.png");
     }
 
-    .content-image-container {
-        height: 448px;
-    }
 }
