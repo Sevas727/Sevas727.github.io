@@ -249,18 +249,6 @@ padding: 0;
     margin-bottom: 20px;
 }
 
-.sonos-succes-image-block {
-    text-align: center;
-    /*margin: 0 auto;*/
-    /*width: 100%;*/
-    /*max-width: 1024px;*/
-    /*height: 743px;*/
-    /*background-repeat: no-repeat;*/
-    /*background-image: url("../images/sonos_successimg_desktop.png");*/
-    /*background-position: bottom center;*/
-    /*background-size: contain;*/
-}
-
 @media
 only screen and (-webkit-min-device-pixel-ratio: 2),
 only screen and (   min--moz-device-pixel-ratio: 2),
@@ -284,9 +272,6 @@ only screen and (        min-device-pixel-ratio: 2) {
 
     .container:nth-of-type(5) .content-image-container {
         background-image: url(../images/sonos_image5_desktop@2x.png);
-    }
-    .sonos-succes-image-block {
-        /*background-image: url("../images/sonos_successimg_desktop@2x.png");*/
     }
 }
 
@@ -352,10 +337,6 @@ only screen and (        min-device-pixel-ratio: 2) {
         background-image: url(../images/sonos_image5_tablet.png);
     }
 
-    .sonos-succes-image-block {
-
-    }
-
     .mobile, .desktop {
         display: none;
     }
@@ -389,9 +370,6 @@ only screen and (        min-device-pixel-ratio: 2) and (min-width: 768px) and (
         background-image: url(../images/sonos_image5_tablet@2x.png);
     }
 
-    .sonos-succes-image-block {
-        /*background-image: url("../images/sonos_successimg_tablet@2x.png");*/
-    }
 }
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
@@ -492,11 +470,6 @@ only screen and (        min-device-pixel-ratio: 2) and (min-width: 768px) and (
         background-image: url(../images/sonos_image5_mobile.png);
     }
 
-    .sonos-succes-image-block {
-        /*height: 391px;*/
-        /*background-image: url("../images/sonos_successimg_mobile.png");*/
-    }
-
     .head-of-container {
         height: auto;
         padding-bottom: 15px;
@@ -539,10 +512,6 @@ only screen and (        min-device-pixel-ratio: 2)       and (min-width: 320px)
 
     .container:nth-of-type(5) .content-image-container {
         background-image: url(../images/sonos_image5_mobile@2x.png);
-    }
-
-    .sonos-succes-image-block {
-        /*background-image: url("../images/sonos_successimg_mobile@2x.png");*/
     }
 
 }
