@@ -570,13 +570,16 @@
     if (event.target == modal) {
       modal.style.display = "none";
     }
-  }
+  };
 
   //close modals when clock on dark background
   window.onload = function () {
     document.getElementsByClassName('modal-container')[0].addEventListener('click', hideModal);
     document.addEventListener('wheel', function(e){
       if(modal.style.display !== 'none') e.preventDefault();
+    });
+    document.addEventListener('scroll', function(e){
+        if(modal.style.display !== 'none') e.preventDefault();
     });
   }
 
