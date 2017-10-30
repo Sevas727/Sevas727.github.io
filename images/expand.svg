@@ -5,7 +5,6 @@ viewBox="0 0 200 200"
  xmlns:xlink="http://www.w3.org/1999/xlink">
  <g id="Layer_x0020_1">
   <metadata id="s"/>
-  <rect fill="#464646" transform="matrix(-0.791723 0.791722 0.791752 0.791752 21.774 48.3516)" width="27.5002" height="126.253"/>
-  <rect fill="#464646" transform="matrix(0.791723 0.791722 -0.791752 0.791752 178.23 48.3516)" width="27.5002" height="126.253"/>
+  <polygon fill="#464646" points="16,53 0,70 100,170 100,169 100,170 200,70 184,53 100,137 100,137 100,137 "/>
  </g>
 </svg>

@@ -26,6 +26,7 @@
         copyingMachineName: '\"TimeMachineBackup_10.200.3.35\"',
         pleaseWait: 'Please wait...',
         close: 'close',
+        cancel: 'cancel',
         importSucTitle: 'Import Successfull',
         allFiles: 'All files from ',
         haveBeenCopied: 'have been copied to My Cloud Home successfully.',
@@ -35,7 +36,7 @@
         dots: '...',
         noNetwAvail: 'No network Shares are available.',
         press: 'Press ',
-        refresh: 'refresh',
+        refresh: 'Refresh',
         toTryAgain: ' to try again.',
         nameOfConn: 'Name of connection, Name of connectionName of connection Name of connectionName of connection Name of connection Name of connection',
         nameOfHost: 'Anti-Virus Essentials, Anti-Virus Essentials, Anti-Virus Essentials, Anti-Virus Essentials, Anti-Virus Essentials'
@@ -143,8 +144,7 @@
             </div>
             <p class="modal-text">
                 <script language="javascript">document.write(localizedStrings.copyingDataFrom)</script>
-                <span><script language="javascript">document.write(localizedStrings.copyingMachineName)</script></span>
-                <script language="javascript">document.write(localizedStrings.dot)</script>
+                <span><script language="javascript">document.write(localizedStrings.copyingMachineName)</script><script language="javascript">document.write(localizedStrings.dot)</script></span>
                 <script language="javascript">document.write(localizedStrings.pleaseWait)</script>
             </p>
             <div class="preloader-container">
@@ -155,7 +155,7 @@
                             </span>
             </div>
             <div class="button-container">
-                <button type="button" class="btn btn-transparent close"><script language="javascript">document.write(localizedStrings.close)</script></button>
+                <button type="button" class="btn btn-transparent close"><script language="javascript">document.write(localizedStrings.cancel)</script></button>
             </div>
         </div>
 
@@ -192,45 +192,6 @@
             </div>
             <div class="button-container">
                 <button type="button" class="btn btn-transparent close"><script language="javascript">document.write(localizedStrings.ok)</script></button>
-            </div>
-        </div>
-
-        <div id="disable-modal" class="modal">
-            <div class="close-btn close">
-                <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="12px" height="12px" version="1.1" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd"
-                    viewBox="0 0 120 120"
-                     xmlns:xlink="http://www.w3.org/1999/xlink">
-                     <g id="s">
-                      <metadata id="CorelCorpID_0Corel-Layer"/>
-                      <rect fill="#464646" transform="matrix(0.431253 -0.431253 0.545957 0.545957 -0.00423632 11.3165)" width="26.2505" height="199.076"/>
-                      <rect fill="#464646" transform="matrix(-0.431253 -0.431253 -0.545957 0.545957 120.004 11.3166)" width="26.2505" height="199.076"/>
-                     </g>
-                </svg>
-            </div>
-            <div class="modal-header"><script language="javascript">setLocale(); document.write(localizedStrings.disTitle)</script></div>
-            <p class="modal-text"><script language="javascript">document.write(localizedStrings.disText)</script></p>
-            <div class="button-container">
-                <button type="button" class="btn btn-primary"><script language="javascript">document.write(localizedStrings.disable)</script></button>
-                <button type="button" class="btn btn-white close"><script language="javascript">document.write(localizedStrings.close)</script></button>
-            </div>
-        </div>
-
-        <div id="enabled-modal" class="modal">
-            <div class="close-btn close">
-                <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="12px" height="12px" version="1.1" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd"
-                    viewBox="0 0 120 120"
-                     xmlns:xlink="http://www.w3.org/1999/xlink">
-                     <g id="s">
-                      <metadata id="CorelCorpID_0Corel-Layer"/>
-                      <rect fill="#464646" transform="matrix(0.431253 -0.431253 0.545957 0.545957 -0.00423632 11.3165)" width="26.2505" height="199.076"/>
-                      <rect fill="#464646" transform="matrix(-0.431253 -0.431253 -0.545957 0.545957 120.004 11.3166)" width="26.2505" height="199.076"/>
-                     </g>
-                </svg>
-            </div>
-            <div class="modal-header"><script language="javascript">setLocale(); document.write(localizedStrings.enabled)</script></div>
-            <p class="modal-text"><script language="javascript">document.write(localizedStrings.fBenabledText)</script></p>
-            <div class="button-container">
-                <button type="button" class="btn btn-transparent close"><script language="javascript">document.write(localizedStrings.close)</script></button>
             </div>
         </div>
 
@@ -335,6 +296,127 @@
                     </div>
                     <p class="network-container-text"><script language="javascript">document.write(clipString(localizedStrings.nameOfConn))</script></p>
                 </div>
+                <div class="network-container">
+                    <div class="network-container-image mycloud-dl4100"></div>
+                    <div class="arrow">
+                        <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" version="1.1" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd"
+                        viewBox="0 0 200 200"
+                         xmlns:xlink="http://www.w3.org/1999/xlink">
+                             <g id="Layer_x0020_1">
+                              <metadata id="s"/>
+                              <rect fill="#464646" transform="matrix(-0.791723 0.791722 0.791752 0.791752 21.774 48.3516)" width="27.5002" height="126.253"/>
+                              <rect fill="#464646" transform="matrix(0.791723 0.791722 -0.791752 0.791752 178.23 48.3516)" width="27.5002" height="126.253"/>
+                             </g>
+                        </svg>
+                    </div>
+                    <p class="network-container-text"><script language="javascript">document.write(clipString(localizedStrings.nameOfConn))</script></p>
+                </div>
+                <div class="network-container">
+                    <div class="network-container-image mycloud-dl4100"></div>
+                    <div class="arrow">
+                        <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" version="1.1" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd"
+                        viewBox="0 0 200 200"
+                         xmlns:xlink="http://www.w3.org/1999/xlink">
+                             <g id="Layer_x0020_1">
+                              <metadata id="s"/>
+                              <rect fill="#464646" transform="matrix(-0.791723 0.791722 0.791752 0.791752 21.774 48.3516)" width="27.5002" height="126.253"/>
+                              <rect fill="#464646" transform="matrix(0.791723 0.791722 -0.791752 0.791752 178.23 48.3516)" width="27.5002" height="126.253"/>
+                             </g>
+                        </svg>
+                    </div>
+                    <p class="network-container-text"><script language="javascript">document.write(clipString(localizedStrings.nameOfConn))</script></p>
+                </div>
+                <div class="network-container">
+                    <div class="network-container-image mycloud-dl4100"></div>
+                    <div class="arrow">
+                        <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" version="1.1" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd"
+                        viewBox="0 0 200 200"
+                         xmlns:xlink="http://www.w3.org/1999/xlink">
+                             <g id="Layer_x0020_1">
+                              <metadata id="s"/>
+                              <rect fill="#464646" transform="matrix(-0.791723 0.791722 0.791752 0.791752 21.774 48.3516)" width="27.5002" height="126.253"/>
+                              <rect fill="#464646" transform="matrix(0.791723 0.791722 -0.791752 0.791752 178.23 48.3516)" width="27.5002" height="126.253"/>
+                             </g>
+                        </svg>
+                    </div>
+                    <p class="network-container-text"><script language="javascript">document.write(clipString(localizedStrings.nameOfConn))</script></p>
+                </div>
+                <div class="network-container">
+                    <div class="network-container-image mycloud-dl4100"></div>
+                    <div class="arrow">
+                        <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" version="1.1" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd"
+                        viewBox="0 0 200 200"
+                         xmlns:xlink="http://www.w3.org/1999/xlink">
+                             <g id="Layer_x0020_1">
+                              <metadata id="s"/>
+                              <rect fill="#464646" transform="matrix(-0.791723 0.791722 0.791752 0.791752 21.774 48.3516)" width="27.5002" height="126.253"/>
+                              <rect fill="#464646" transform="matrix(0.791723 0.791722 -0.791752 0.791752 178.23 48.3516)" width="27.5002" height="126.253"/>
+                             </g>
+                        </svg>
+                    </div>
+                    <p class="network-container-text"><script language="javascript">document.write(clipString(localizedStrings.nameOfConn))</script></p>
+                </div>
+                <div class="network-container">
+                    <div class="network-container-image mycloud-dl4100"></div>
+                    <div class="arrow">
+                        <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" version="1.1" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd"
+                        viewBox="0 0 200 200"
+                         xmlns:xlink="http://www.w3.org/1999/xlink">
+                             <g id="Layer_x0020_1">
+                              <metadata id="s"/>
+                              <rect fill="#464646" transform="matrix(-0.791723 0.791722 0.791752 0.791752 21.774 48.3516)" width="27.5002" height="126.253"/>
+                              <rect fill="#464646" transform="matrix(0.791723 0.791722 -0.791752 0.791752 178.23 48.3516)" width="27.5002" height="126.253"/>
+                             </g>
+                        </svg>
+                    </div>
+                    <p class="network-container-text"><script language="javascript">document.write(clipString(localizedStrings.nameOfConn))</script></p>
+                </div>
+                <div class="network-container">
+                    <div class="network-container-image mycloud-dl4100"></div>
+                    <div class="arrow">
+                        <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" version="1.1" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd"
+                        viewBox="0 0 200 200"
+                         xmlns:xlink="http://www.w3.org/1999/xlink">
+                             <g id="Layer_x0020_1">
+                              <metadata id="s"/>
+                              <rect fill="#464646" transform="matrix(-0.791723 0.791722 0.791752 0.791752 21.774 48.3516)" width="27.5002" height="126.253"/>
+                              <rect fill="#464646" transform="matrix(0.791723 0.791722 -0.791752 0.791752 178.23 48.3516)" width="27.5002" height="126.253"/>
+                             </g>
+                        </svg>
+                    </div>
+                    <p class="network-container-text"><script language="javascript">document.write(clipString(localizedStrings.nameOfConn))</script></p>
+                </div>
+                <div class="network-container">
+                    <div class="network-container-image mycloud-dl4100"></div>
+                    <div class="arrow">
+                        <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" version="1.1" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd"
+                        viewBox="0 0 200 200"
+                         xmlns:xlink="http://www.w3.org/1999/xlink">
+                             <g id="Layer_x0020_1">
+                              <metadata id="s"/>
+                              <rect fill="#464646" transform="matrix(-0.791723 0.791722 0.791752 0.791752 21.774 48.3516)" width="27.5002" height="126.253"/>
+                              <rect fill="#464646" transform="matrix(0.791723 0.791722 -0.791752 0.791752 178.23 48.3516)" width="27.5002" height="126.253"/>
+                             </g>
+                        </svg>
+                    </div>
+                    <p class="network-container-text"><script language="javascript">document.write(clipString(localizedStrings.nameOfConn))</script></p>
+                </div>
+                <div class="network-container">
+                    <div class="network-container-image mycloud-dl4100"></div>
+                    <div class="arrow">
+                        <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" version="1.1" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd"
+                        viewBox="0 0 200 200"
+                         xmlns:xlink="http://www.w3.org/1999/xlink">
+                             <g id="Layer_x0020_1">
+                              <metadata id="s"/>
+                              <rect fill="#464646" transform="matrix(-0.791723 0.791722 0.791752 0.791752 21.774 48.3516)" width="27.5002" height="126.253"/>
+                              <rect fill="#464646" transform="matrix(0.791723 0.791722 -0.791752 0.791752 178.23 48.3516)" width="27.5002" height="126.253"/>
+                             </g>
+                        </svg>
+                    </div>
+                    <p class="network-container-text"><script language="javascript">document.write(clipString(localizedStrings.nameOfConn))</script></p>
+                </div>
+
                 <div class="network-container selected">
                     <div class="network-container-image mycloud-ex2"></div>
                     <div class="arrow expand">
@@ -350,6 +432,8 @@
                     </div>
                     <p class="network-container-text"><script language="javascript">document.write(clipString(localizedStrings.nameOfConn))</script></p>
                 </div>
+
+
                 <!--AWAILABLE NETWORKS CONTAINER-->
                 <div class="awailable-networks-container">
                     <div class="awailable-network-container">
@@ -603,6 +687,9 @@
   //close modals when clock on dark background
   window.onload = function () {
     document.getElementsByClassName('modal-container')[0].addEventListener('click', hideModal);
+    document.addEventListener('wheel', function(e){
+      if(modal.style.display !== 'none') e.preventDefault();
+    });
   }
 
 </script>
