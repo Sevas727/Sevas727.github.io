@@ -171,6 +171,7 @@ body {
     top: 50%;
     margin-top: -35px;
     left: 0;
+    background-size: contain;
 }
 
 .network-container-text {
