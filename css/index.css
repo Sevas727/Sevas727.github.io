@@ -735,7 +735,11 @@ div.network-container:hover, div.network-container:active {
     border-top: 3px solid #00A0DF;
 }
 
-@media (-webkit-min-device-pixel-ratio: 2) {
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2) {
 
     .mycloud {
         background-image: url("../images/mycloud@2x.png");
@@ -822,8 +826,16 @@ div.network-container:hover, div.network-container:active {
         width: calc(50% - 15px);
     }
 
+    .network-container:nth-of-type(2n) {
+        margin-right: 0;
+    }
+
     .awailable-network-container {
         width: calc(50% - 15px);
+    }
+
+    .awailable-network-container:nth-of-type(2n) {
+        margin-right: 0;
     }
 
     .modal .close-btn {
@@ -841,10 +853,6 @@ div.network-container:hover, div.network-container:active {
         width: 60px;
         height: 48px;
         overflow: hidden;
-    }
-
-    .g-layout {
-        padding-bottom: 60px;
     }
 
     .mycloud-logo-text {
@@ -872,11 +880,11 @@ div.network-container:hover, div.network-container:active {
     }
 
     .network-import-logo-container {
-        margin-top: 48px;
+        margin-top: 15px;
     }
 
     .network-import-logo-container img {
-        height: 72px;
+        height: 70px;
     }
 
     .networks-container {
@@ -885,10 +893,12 @@ div.network-container:hover, div.network-container:active {
 
     .network-container {
         width: 100%;
+        margin-right: 0;
     }
 
     .awailable-network-container {
         width: 100%;
+        margin-right: 0;
     }
 
     .social-container-content-wrapper {
