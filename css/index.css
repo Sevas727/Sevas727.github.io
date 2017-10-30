@@ -190,6 +190,10 @@ body {
     padding: 0 40px 0 84px;
 }
 
+.selected {
+    background-color: #f0f0f1!important;
+}
+
 div.network-container:hover, div.network-container:active {
     background-color: #f9f9f9;
     cursor: pointer;
