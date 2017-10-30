@@ -581,6 +581,9 @@
     document.addEventListener('scroll', function(e){
         if(modal.style.display !== 'none') e.preventDefault();
     });
+    document.addEventListener('touchmove', function(e){
+        if(modal.style.display !== 'none') e.preventDefault();
+    });
   }
 
 </script>
