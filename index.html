@@ -32,7 +32,19 @@
         ok: 'Ok',
         connectingTo: 'Connecting to ',
         dot: '.',
-        dots: '...'
+        dots: '...',
+        noNetwAvail: 'No network Shares are available.',
+        press: 'Press ',
+        refresh: 'refresh',
+        toTryAgain: ' to try again.',
+        nameOfConn: 'Name of connection, Name of connectionName of connection Name of connectionName of connection Name of connection Name of connection',
+        nameOfHost: 'Anti-Virus Essentials, Anti-Virus Essentials, Anti-Virus Essentials, Anti-Virus Essentials, Anti-Virus Essentials'
+      };
+
+      var clipString = function(string, symb){
+        var numOfSymb = symb ? symb : 30;
+        if (string.length > numOfSymb) return string.substring(0,numOfSymb) + '...';
+        return string;
       };
 
       function setLocale() {
@@ -229,11 +241,11 @@
                 <script language="javascript">document.write(localizedStrings.dots)</script>
             </p>
             <div class="preloader-container">
-                            <span class="preloader">
-                              <svg xmlns="http://www.w3.org/2000/svg" version="1.1" height="20" width="20" viewBox="0 0 75 75">
-                                <circle cx="37.5" cy="37.5" r="33.5" stroke-width="8" stroke="#00A0DF"></circle>
-                              </svg>
-                            </span>
+               <span class="preloader">
+                  <svg xmlns="http://www.w3.org/2000/svg" version="1.1" height="20" width="20" viewBox="0 0 75 75">
+                     <circle cx="37.5" cy="37.5" r="33.5" stroke-width="8" stroke="#00A0DF"></circle>
+                  </svg>
+               </span>
             </div>
         </div>
     </div>
@@ -272,15 +284,15 @@
 
             <!--LOADER-->
             <div class="no-network">
-                <p>No network Shares are awailable.</p>
-                <p>Press <span>Refresh</span> to try again.</p>
+                <p><script language="javascript">document.write(localizedStrings.noNetwAvail)</script></p>
+                <p><script language="javascript">document.write(localizedStrings.press)</script><span><script language="javascript">document.write(localizedStrings.refresh)</script></span><script language="javascript">document.write(localizedStrings.toTryAgain)</script></p>
             </div>
 
             <!--NETWORK CONTAINER-->
             <div class="network-containers">
                 <div class="network-container mycloud-dl2100">
                     <div class="arrow">
-                        <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="20px" height="20px" version="1.1" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd"
+                        <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" version="1.1" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd"
                         viewBox="0 0 200 200"
                          xmlns:xlink="http://www.w3.org/1999/xlink">
                              <g id="Layer_x0020_1">
@@ -290,11 +302,11 @@
                              </g>
                         </svg>
                     </div>
-                    <p class="network-container-text">Name of connection</p>
+                    <p class="network-container-text"><script language="javascript">document.write(clipString(localizedStrings.nameOfConn))</script></p>
                 </div>
                 <div class="network-container mycloud">
                     <div class="arrow">
-                        <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="20px" height="20px" version="1.1" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd"
+                        <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" version="1.1" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd"
                         viewBox="0 0 200 200"
                          xmlns:xlink="http://www.w3.org/1999/xlink">
                              <g id="Layer_x0020_1">
@@ -304,10 +316,11 @@
                              </g>
                         </svg>
                     </div>
+                    <p class="network-container-text"><script language="javascript">document.write(clipString(localizedStrings.nameOfConn))</script></p>
                 </div>
                 <div class="network-container mycloud-dl4100">
                     <div class="arrow">
-                        <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="20px" height="20px" version="1.1" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd"
+                        <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" version="1.1" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd"
                         viewBox="0 0 200 200"
                          xmlns:xlink="http://www.w3.org/1999/xlink">
                              <g id="Layer_x0020_1">
@@ -317,10 +330,11 @@
                              </g>
                         </svg>
                     </div>
+                    <p class="network-container-text"><script language="javascript">document.write(clipString(localizedStrings.nameOfConn))</script></p>
                 </div>
                 <div class="network-container mycloud-ex2">
                     <div class="arrow expand">
-                        <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="20px" height="20px" version="1.1" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd"
+                        <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" version="1.1" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd"
                         viewBox="0 0 200 200"
                          xmlns:xlink="http://www.w3.org/1999/xlink">
                              <g id="Layer_x0020_1">
@@ -330,6 +344,7 @@
                              </g>
                         </svg>
                     </div>
+                    <p class="network-container-text"><script language="javascript">document.write(clipString(localizedStrings.nameOfConn))</script></p>
                 </div>
                 <!--AWAILABLE NETWORKS CONTAINER-->
                 <div class="awailable-networks-container">
@@ -345,7 +360,7 @@
                              </g>
                             </svg>
                         </div>
-                        <p class="awailable-network-container-text">Anti-Virus Essentials</p>
+                        <p class="awailable-network-container-text"><script language="javascript">document.write(clipString(localizedStrings.nameOfHost))</script></p>
                     </div>
                     <div class="awailable-network-container">
                         <div class="import">
@@ -359,7 +374,7 @@
                              </g>
                             </svg>
                         </div>
-                        <p class="awailable-network-container-text">Anti-Virus Essentials</p>
+                        <p class="awailable-network-container-text"><script language="javascript">document.write(clipString(localizedStrings.nameOfHost))</script></p>
                     </div>
                     <div class="awailable-network-container">
                         <div class="import">
@@ -373,7 +388,133 @@
                              </g>
                             </svg>
                         </div>
-                        <p class="awailable-network-container-text">Anti</p>
+                        <p class="awailable-network-container-text"><script language="javascript">document.write(clipString(localizedStrings.nameOfHost))</script></p>
+                    </div>
+                    <div class="awailable-network-container">
+                        <div class="import">
+                            <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="20px" height="20px" version="1.1" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd"
+                            viewBox="0 0 200 200"
+                             xmlns:xlink="http://www.w3.org/1999/xlink">
+                             <g id="Layer_x0020_1">
+                              <metadata id="s"/>
+                              <polygon id="download" fill="#464646" points="80,0 120,0 120,90 160,90 100,150 40,90 80,90 "/>
+                              <rect fill="#464646" x="20" y="170" width="160.001" height="29.9985"/>
+                             </g>
+                            </svg>
+                        </div>
+                        <p class="awailable-network-container-text"><script language="javascript">document.write(clipString(localizedStrings.nameOfHost))</script></p>
+                    </div>
+                    <div class="awailable-network-container">
+                        <div class="import">
+                            <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="20px" height="20px" version="1.1" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd"
+                            viewBox="0 0 200 200"
+                             xmlns:xlink="http://www.w3.org/1999/xlink">
+                             <g id="Layer_x0020_1">
+                              <metadata id="s"/>
+                              <polygon id="download" fill="#464646" points="80,0 120,0 120,90 160,90 100,150 40,90 80,90 "/>
+                              <rect fill="#464646" x="20" y="170" width="160.001" height="29.9985"/>
+                             </g>
+                            </svg>
+                        </div>
+                        <p class="awailable-network-container-text"><script language="javascript">document.write(clipString(localizedStrings.nameOfHost))</script></p>
+                    </div>
+                    <div class="awailable-network-container">
+                        <div class="import">
+                            <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="20px" height="20px" version="1.1" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd"
+                            viewBox="0 0 200 200"
+                             xmlns:xlink="http://www.w3.org/1999/xlink">
+                             <g id="Layer_x0020_1">
+                              <metadata id="s"/>
+                              <polygon id="download" fill="#464646" points="80,0 120,0 120,90 160,90 100,150 40,90 80,90 "/>
+                              <rect fill="#464646" x="20" y="170" width="160.001" height="29.9985"/>
+                             </g>
+                            </svg>
+                        </div>
+                        <p class="awailable-network-container-text"><script language="javascript">document.write(clipString(localizedStrings.nameOfHost))</script></p>
+                    </div>
+                    <div class="awailable-network-container">
+                        <div class="import">
+                            <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="20px" height="20px" version="1.1" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd"
+                            viewBox="0 0 200 200"
+                             xmlns:xlink="http://www.w3.org/1999/xlink">
+                             <g id="Layer_x0020_1">
+                              <metadata id="s"/>
+                              <polygon id="download" fill="#464646" points="80,0 120,0 120,90 160,90 100,150 40,90 80,90 "/>
+                              <rect fill="#464646" x="20" y="170" width="160.001" height="29.9985"/>
+                             </g>
+                            </svg>
+                        </div>
+                        <p class="awailable-network-container-text"><script language="javascript">document.write(clipString(localizedStrings.nameOfHost))</script></p>
+                    </div>
+                    <div class="awailable-network-container">
+                        <div class="import">
+                            <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="20px" height="20px" version="1.1" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd"
+                            viewBox="0 0 200 200"
+                             xmlns:xlink="http://www.w3.org/1999/xlink">
+                             <g id="Layer_x0020_1">
+                              <metadata id="s"/>
+                              <polygon id="download" fill="#464646" points="80,0 120,0 120,90 160,90 100,150 40,90 80,90 "/>
+                              <rect fill="#464646" x="20" y="170" width="160.001" height="29.9985"/>
+                             </g>
+                            </svg>
+                        </div>
+                        <p class="awailable-network-container-text"><script language="javascript">document.write(clipString(localizedStrings.nameOfHost))</script></p>
+                    </div>
+                    <div class="awailable-network-container">
+                        <div class="import">
+                            <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="20px" height="20px" version="1.1" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd"
+                            viewBox="0 0 200 200"
+                             xmlns:xlink="http://www.w3.org/1999/xlink">
+                             <g id="Layer_x0020_1">
+                              <metadata id="s"/>
+                              <polygon id="download" fill="#464646" points="80,0 120,0 120,90 160,90 100,150 40,90 80,90 "/>
+                              <rect fill="#464646" x="20" y="170" width="160.001" height="29.9985"/>
+                             </g>
+                            </svg>
+                        </div>
+                        <p class="awailable-network-container-text"><script language="javascript">document.write(clipString(localizedStrings.nameOfHost))</script></p>
+                    </div>
+                    <div class="awailable-network-container">
+                        <div class="import">
+                            <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="20px" height="20px" version="1.1" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd"
+                            viewBox="0 0 200 200"
+                             xmlns:xlink="http://www.w3.org/1999/xlink">
+                             <g id="Layer_x0020_1">
+                              <metadata id="s"/>
+                              <polygon id="download" fill="#464646" points="80,0 120,0 120,90 160,90 100,150 40,90 80,90 "/>
+                              <rect fill="#464646" x="20" y="170" width="160.001" height="29.9985"/>
+                             </g>
+                            </svg>
+                        </div>
+                        <p class="awailable-network-container-text"><script language="javascript">document.write(clipString(localizedStrings.nameOfHost))</script></p>
+                    </div>
+                    <div class="awailable-network-container">
+                        <div class="import">
+                            <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="20px" height="20px" version="1.1" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd"
+                            viewBox="0 0 200 200"
+                             xmlns:xlink="http://www.w3.org/1999/xlink">
+                             <g id="Layer_x0020_1">
+                              <metadata id="s"/>
+                              <polygon id="download" fill="#464646" points="80,0 120,0 120,90 160,90 100,150 40,90 80,90 "/>
+                              <rect fill="#464646" x="20" y="170" width="160.001" height="29.9985"/>
+                             </g>
+                            </svg>
+                        </div>
+                        <p class="awailable-network-container-text"><script language="javascript">document.write(clipString(localizedStrings.nameOfHost))</script></p>
+                    </div>
+                    <div class="awailable-network-container">
+                        <div class="import">
+                            <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="20px" height="20px" version="1.1" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd"
+                            viewBox="0 0 200 200"
+                             xmlns:xlink="http://www.w3.org/1999/xlink">
+                             <g id="Layer_x0020_1">
+                              <metadata id="s"/>
+                              <polygon id="download" fill="#464646" points="80,0 120,0 120,90 160,90 100,150 40,90 80,90 "/>
+                              <rect fill="#464646" x="20" y="170" width="160.001" height="29.9985"/>
+                             </g>
+                            </svg>
+                        </div>
+                        <p class="awailable-network-container-text"><script language="javascript">document.write(clipString(localizedStrings.nameOfHost))</script></p>
                     </div>
                     <div class="awailable-network-container without-sharing">
                         <div class="import">
@@ -387,7 +528,7 @@
                              </g>
                             </svg>
                         </div>
-                        <p class="awailable-network-container-text">Anti-Virus Essentials</p>
+                        <p class="awailable-network-container-text"><script language="javascript">document.write(clipString(localizedStrings.nameOfHost))</script></p>
                     </div>
                     <div class="awailable-network-container without-sharing">
                         <div class="import">
@@ -401,7 +542,7 @@
                              </g>
                             </svg>
                         </div>
-                        <p class="awailable-network-container-text">test</p>
+                        <p class="awailable-network-container-text"><script language="javascript">document.write(clipString(localizedStrings.nameOfHost))</script></p>
                     </div>
                     <div class="awailable-network-container">
                         <div class="import">
@@ -415,7 +556,7 @@
                              </g>
                             </svg>
                         </div>
-                        <p class="awailable-network-container-text">Anti-Virus Essentials</p>
+                        <p class="awailable-network-container-text"><script language="javascript">document.write(clipString(localizedStrings.nameOfHost))</script></p>
                     </div>
                     <div class="awailable-network-container">
                         <div class="import">
@@ -429,7 +570,7 @@
                              </g>
                             </svg>
                         </div>
-                        <p class="awailable-network-container-text">Essentials</p>
+                        <p class="awailable-network-container-text"><script language="javascript">document.write(clipString(localizedStrings.nameOfHost))</script></p>
                     </div>
                 </div>
                 <!--AWAILABLE NETWORKS CONTAINER END-->
@@ -449,11 +590,17 @@
     }, false);
   }
 
-  window.onclick = function(event) {
+  var hideModal = function(event) {
     if (event.target == modal) {
       modal.style.display = "none";
     }
   }
+
+  //close modals when clock on dark background
+  window.onload = function () {
+    document.getElementsByClassName('modal-container')[0].addEventListener('click', hideModal);
+  }
+
 </script>
 </body>
 </html>

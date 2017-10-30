@@ -144,32 +144,40 @@ body {
 .network-containers {
     width: 95%;
     padding: 0;
-    margin: 20px auto 0 auto;
+    margin: 0px auto 0 auto;
     list-style: none;
     font-size: 0;
     text-align: left;
     /*display: block;*/
     display: flex;
     flex-flow: row wrap;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .network-container {
     vertical-align: top;
-    /*width: calc(25% - 1px);*/
-    width: 25%;
+    width: calc(25% - 23px);
     height: 100px;
     position: relative;
-    /*display: inline-block;*/
-    /*background-color: tomato;*/
     background-repeat: no-repeat;
     background-position-y: center;
-    background-size: auto 80%;
+    margin-top: 20px;
 }
 
 .network-container-text {
     font-size: 16px;
-    margin: 35px 40px 35px 105px;
+    /*margin: 35px 40px 35px 105px;*/
+    font-family: 'CeraProModern500', sans-serif;
+    font-size: 16px;
+    display: flex;
+    /* margin: 35px 40px 35px 105px; */
+    font-family: 'CeraProModern500', sans-serif;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    /* width: 100%; */
+    height: 100%;
+    padding: 0 40px 0 84px;
 }
 
 div.network-container:hover, div.network-container:active {
@@ -178,11 +186,11 @@ div.network-container:hover, div.network-container:active {
 }
 
 .network-container .arrow {
-    width: 20px;
-    height: 20px;
+    width: 16px;
+    height: 16px;
     position: absolute;
-    right: 12px;
-    top: 40px;
+    right: 14px;
+    top: 42px;
 }
 
 .network-container .arrow.expand {
@@ -192,27 +200,28 @@ div.network-container:hover, div.network-container:active {
 .awailable-networks-container {
     border-top: 2px solid #00a0df;
     border-bottom: 2px solid #f0f0f1;
-    padding: 15px 0;
+    padding: 15px 0 0px 0;
     width: 100%;
     /*background-color: #2b542c;*/
     /*display: inline-block;*/
     font-size: 0;
     display: flex;
     flex-flow: row wrap;
-    justify-content: flex-start;
+    justify-content: space-between;
 }
 
 .awailable-network-container {
     min-height: 45px;
-    width: 25%;
+    width: calc(25% - 23px);
     /*background-color: yellow;*/
     background-image: url('../images/network.svg');
-    background-position: 34px center;
+    background-position: 20px center;
     background-repeat: no-repeat;
     /*display: inline-block;*/
     position: relative;
     font-size: 16px;
     vertical-align: top;
+    margin-bottom: 20px;
 }
 
 .awailable-network-container.without-sharing {
@@ -227,6 +236,7 @@ div.network-container:hover, div.network-container:active {
 .awailable-network-container-text {
     text-align: left;
     margin: 13px 40px 13px 100px;
+    font-family: 'CeraProModern500', sans-serif;
 }
 
 .import {
@@ -448,6 +458,7 @@ div.network-container:hover, div.network-container:active {
 
 #connecting-modal {
     display: block;
+    padding-bottom: 40px;
 }
 
 #connecting-modal .close-btn {
@@ -565,6 +576,7 @@ div.network-container:hover, div.network-container:active {
 .no-network span {
     color: #00A0DF;
     cursor: pointer;
+    font-family: 'CeraProModern500', sans-serif;
 }
 
 .no-network span:hover {
@@ -786,13 +798,11 @@ div.network-container:hover, div.network-container:active {
     }
 
     .network-container {
-        /*width: calc(50% - 1px);*/
-        width: 50%;
+        width: calc(50% - 15px);
     }
 
     .awailable-network-container {
-        /*width: calc(50% - 1px);*/
-        width: 50%;
+        width: calc(50% - 15px);
     }
 
     .modal .close-btn {
