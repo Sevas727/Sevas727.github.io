@@ -419,7 +419,7 @@ div.network-container:hover, div.network-container:active {
 }
 
 #import-succesful-modal {
-    display: block;
+    display: none;
 }
 
 #import-succesful-modal .done-container {
@@ -444,6 +444,18 @@ div.network-container:hover, div.network-container:active {
 #enabled-modal .modal-text {
     font-size: 16px;
     padding-top: 0;
+}
+
+#connecting-modal {
+    display: block;
+}
+
+#connecting-modal .close-btn {
+    display: none;
+}
+
+#connecting-modal .modal-text {
+    padding-top: 35px;
 }
 
 .close-btn {
@@ -527,6 +539,12 @@ div.network-container:hover, div.network-container:active {
 .btn-transparent:focus, .btn-transparent:hover, .btn-transparent:active {
     color: #0CACEB;
     background: #e6e6e6;
+}
+
+.btn-small {
+    padding: 5px 12px;
+    width: inherit;
+    font-size: 14px;
 }
 
 .mobile, .tablet {
