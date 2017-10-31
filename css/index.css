@@ -164,6 +164,7 @@ body {
     background-color: #fff;
     padding: 0 5px;
     max-width: 430px;
+    border: 1px solid #E6E6E6;
 }
 
 .container p {
@@ -319,15 +320,14 @@ only screen and (        min-device-pixel-ratio: 2) {
     .containers {
         margin: 0px;
         width: inherit;
-        flex-direction: column-reverse;
+        flex-direction: column;
         flex-wrap: wrap;
+        align-items: center;
     }
 
     .container {
         padding: 0;
         margin-top: 65px;
-        border-top: 1px solid #E6E6E6;
-        border-bottom: 1px solid #E6E6E6;
     }
 
     .container .container-image-wrapper {
