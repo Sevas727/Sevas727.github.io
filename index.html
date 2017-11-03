@@ -6,16 +6,17 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>My Cloud Alexa</title>
     <link rel="stylesheet" href="./css/index.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bowser/1.8.1/bowser.min.js"></script>
     <script language="javascript">
       window.onload = function() {
         setLocale();
       };
-
+      console.log('platform.os', bowser);
       var OSName="Unknown OS";
-      if (navigator.appVersion.indexOf("Win")!=-1) OSName="Windows";
-      if (navigator.appVersion.indexOf("Mac")!=-1) OSName="MacOS";
-      if (navigator.appVersion.indexOf("X11")!=-1) OSName="UNIX";
-      if (navigator.appVersion.indexOf("Linux")!=-1) OSName="Linux";
+//      if (navigator.appVersion.indexOf("Win")!=-1) OSName="Windows";
+//      if (navigator.appVersion.indexOf("Mac")!=-1) OSName="MacOS";
+//      if (navigator.appVersion.indexOf("X11")!=-1) OSName="UNIX";
+//      if (navigator.appVersion.indexOf("Linux")!=-1) OSName="Linux";
 
       var localizedStrings = {};
       var localeEnStrings = {
@@ -91,7 +92,7 @@
 
 </head>
 <body>
-<h1><script>document.write('Your OS: '+OSName);</script></h1>
+<h1><script>document.write('Your OS: '+ bowser.osname);</script></h1>
     <div class="g-layout">
         <div class="g-container">
             <!--My cloud LOGO-->
