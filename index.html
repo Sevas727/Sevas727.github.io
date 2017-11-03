@@ -4,26 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>My Cloud Plex</title>
+    <title>My Cloud Alexa</title>
     <link rel="stylesheet" href="./css/index.css">
     <script language="javascript">
       window.onload = function() {
         setLocale();
       };
+
+      var OSName="Unknown OS";
+      if (navigator.appVersion.indexOf("Win")!=-1) OSName="Windows";
+      if (navigator.appVersion.indexOf("Mac")!=-1) OSName="MacOS";
+      if (navigator.appVersion.indexOf("X11")!=-1) OSName="UNIX";
+      if (navigator.appVersion.indexOf("Linux")!=-1) OSName="Linux";
+
       var localizedStrings = {};
       var localeEnStrings = {
         myCloudServices: 'My Cloud Services',
-        title: 'Using Plex',
-        note: 'Note: ',
-        content1: 'For the first time setup you need to be on your local network to claim your Plex Media server and finish setup.',
-        tap: 'Tap the ',
-        filesTab: 'Files tab ',
-        andLook: ' and look for the folder named',
-        plex: '\"Plex\".',
-        drop: 'Drop ',
-        yourPh: 'your photos, videos, and music into your newly-created ',
-        plexFold: 'Plex folder.'
-
+        title: 'Connect Amazon Alexa',
+        content1: 'Alexa is an intelligent personal assistant which is capable of voice interaction, music playback, ' +
+        'making to-do lists, setting alarms, streaming podcasts, playing audiobooks and other. Alexa can also control ' +
+        'several smart devices using itself as a home automation system.',
+        content2: 'You can stream and listen music stored on your My Cloud Home device from Alexa enabled device like Echo or Echo Dot.',
+        findOur: 'Find our',
+        toGet: 'to get My Cloud Home skill.',
+        amazAlexMob: 'Amazon Alexa mobile app',
+        orUse: 'or use',
+        alexaSkillCat: 'Alexa Skill Catalog',
+        enableThisSkill: 'Enable this skill',
+        withYourCred: 'with your My Cloud Home credentials.',
+        and: 'and',
+        signIn: 'sign in',
+        myCloudHomeSc: 'My Cloud Home skill',
+        streamAndListen: 'Stream and listen music',
+        storedIn: 'stored on your My Cloud Home device from Alexa enabled device like Echo or Echo Dot.',
+        goBtn: 'Go to My cloud home skill'
       };
 
       function setLocale() {
@@ -77,6 +91,7 @@
 
 </head>
 <body>
+<h1><script>document.write('Your OS: '+OSName);</script></h1>
     <div class="g-layout">
         <div class="g-container">
             <!--My cloud LOGO-->
@@ -90,40 +105,94 @@
                 <div class="mycloud-logo-container">
                     <img class="mycloud-logo" src="./images/mycloudservices_logo.svg" alt="My Cloud Logo">
                 </div>
-                <div class="plex-logo-container">
-                    <a>
-                        <img class="plex-logo" src="./images/plex.svg" alt="Plex">
+                <div class="alexa-logo-container">
+                    <a href="#">
+                        <img class="alexa-logo" src="./images/alexa.svg" alt="Alexa">
                     </a>
                 </div>
             </header>
             <!--CONTENT-->
             <main>
                 <h1 class="title"><script language="javascript">document.write(localizedStrings.title)</script></h1>
-                <div class="containers-wrapper">
-                    <div class="containers">
-                        <!--CONTAINER-->
-                        <div class="container">
-                            <div class="circle">1</div>
-                            <p>
-                                <script language="javascript">document.write(localizedStrings.tap)</script>
-                                <span><script language="javascript">document.write(localizedStrings.filesTab)</script></span>
-                                <script language="javascript">document.write(localizedStrings.andLook)</script>
-                                <span><script language="javascript">document.write(localizedStrings.plex)</script></span>
-                            </p>
-                            <div class="container-image-wrapper"></div>
-                        </div>
-                        <div class="container">
-                            <div class="circle">2</div>
-                            <p>
-                                <span><script language="javascript">document.write(localizedStrings.drop)</script></span>
-                                <script language="javascript">document.write(localizedStrings.yourPh)</script>
-                                <span><script language="javascript">document.write(localizedStrings.plexFold)</script></span>
-                            </p>
-                            <div class="container-image-wrapper"></div>
+                <p class="content"><script language="javascript">document.write(localizedStrings.content1)</script></p>
+                <p class="content"><script language="javascript">document.write(localizedStrings.content2)</script></p>
+                <div class="containers">
+
+                    <!--CONTAINER-->
+                    <div class="container">
+                        <div class="container-content-wrapper">
+                            <img class="container-logo" src="./images/alexa_imagedevices.svg" />
                         </div>
                     </div>
+
+                    <div class="container">
+                        <div class="container-content-wrapper">
+                            <div class="right-container-block">
+                                <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="48px" height="48px" version="1.1" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd"
+                                    viewBox="0 0 480 480"
+                                     xmlns:xlink="http://www.w3.org/1999/xlink">
+                                     <g id="Layer_x0020_1">
+                                      <metadata id="s"/>
+                                      <circle fill="black" cx="240" cy="240" r="240"/>
+                                      <circle fill="white" cx="240" cy="240" r="220"/>
+                                      <circle fill="#00CAFF" cx="240" cy="240" r="195"/>
+                                      <polygon fill="white" points="261,143 261,337 230,337 230,180 190,192 183,165 250,143 "/>
+                                     </g>
+                                </svg>
+                                <p>
+                                    <script language="javascript">document.write(localizedStrings.findOur)</script>
+                                    <span><script language="javascript">document.write(localizedStrings.myCloudHomeSc)</script></span>
+                                    <a href="https://owa.luxoft.com/owa/redir.aspx?C=Ys0ChaYDhc10EjSR7rMsO2EVs1PXYhGT2wyH0O-YTvBLV0vHRhzVCA..&URL=https%3a%2f%2fwww.amazon.com%2fs%2fref%3dnb_sb_noss%3furl%3dsearch-alias%253Dalexa-skills%26field-keywords"><script language="javascript">document.write(localizedStrings.alexaSkillCat)</script></a>
+                                    <script language="javascript">document.write(localizedStrings.orUse)</script>
+                                    <a href="https://itunes.apple.com/us/app/amazon-alexa/id944011620?mt=8"><script language="javascript">document.write(localizedStrings.amazAlexMob)</script></a>
+                                    <script language="javascript">document.write(localizedStrings.toGet)</script>
+                                </p>
+                            </div>
+
+                            <div class="right-container-block">
+                                <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="48px" height="48px" version="1.1" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd"
+                                    viewBox="0 0 480 480"
+                                     xmlns:xlink="http://www.w3.org/1999/xlink">
+                                     <g id="Layer_x0020_1">
+                                      <metadata id="s"/>
+                                      <circle fill="black" cx="240" cy="240" r="240"/>
+                                      <circle fill="white" cx="240" cy="240" r="220"/>
+                                      <circle fill="#00CAFF" cx="240" cy="240" r="195"/>
+                                      <path fill="white" d="M305 310l0 27 -139 0 0 -7 69 -74c11,-12 19,-22 24,-29 5,-8 7,-16 7,-25 0,-9 -3,-17 -9,-24 -6,-6 -13,-10 -23,-10 -10,0 -18,4 -24,11 -6,6 -9,15 -9,25 0,4 0,9 1,15l-31 0c-1,-6 -2,-11 -2,-17 0,-11 3,-21 8,-30 5,-10 13,-17 23,-23 9,-6 21,-9 34,-9 12,0 23,3 33,8 10,5 17,12 23,21 5,10 8,20 8,31 0,13 -3,25 -10,36 -7,11 -17,23 -31,38l-34 36 82 0z"/>
+                                     </g>
+                                </svg>
+                                <p>
+                                    <span><script language="javascript">document.write(localizedStrings.enableThisSkill)</script></span>
+                                    <script language="javascript">document.write(localizedStrings.and)</script>
+                                    <span><script language="javascript">document.write(localizedStrings.signIn)</script></span>
+                                    <script language="javascript">document.write(localizedStrings.withYourCred)</script>
+                                </p>
+                            </div>
+
+                            <div class="right-container-block">
+                                <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="48px" height="48px" version="1.1" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd"
+                                    viewBox="0 0 480 480"
+                                     xmlns:xlink="http://www.w3.org/1999/xlink">
+                                     <g id="Layer_x0020_1">
+                                      <metadata id="d"/>
+                                      <circle fill="black" cx="240" cy="240" r="240"/>
+                                      <circle fill="white" cx="240" cy="240" r="220"/>
+                                      <circle fill="#00CAFF" cx="240" cy="240" r="195"/>
+                                      <path fill="white" d="M260 215c14,2 26,9 36,19 10,10 15,24 15,41 0,13 -3,24 -9,34 -7,10 -15,18 -26,23 -11,5 -23,8 -35,8 -16,0 -30,-4 -41,-12 -12,-7 -21,-17 -27,-30l21 -15c6,9 13,16 20,21 7,5 16,8 26,8 11,0 21,-4 28,-11 8,-6 11,-15 11,-26 0,-11 -4,-19 -11,-25 -8,-6 -19,-9 -33,-9l-22 0 0 -9 45 -60 -72 0 0 -29 121 0 0 9 -47 63z"/>
+                                     </g>
+                                </svg>
+                                <p>
+                                    <span><script language="javascript">document.write(localizedStrings.streamAndListen)</script></span>
+                                    <script language="javascript">document.write(localizedStrings.storedIn)</script>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
-                <p class="content"><span><script language="javascript">document.write(localizedStrings.note)</script></span><script language="javascript">document.write(localizedStrings.content1)</script></p>
+                <div class="btn-container">
+                    <a class="btn btn-primary" href="#"><script language="javascript">document.write(localizedStrings.goBtn)</script></a>
+                </div>
             </main>
         </div>
     </div>

@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Cloud Social and Cloud Import</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <script language="javascript">
+      window.onload = function() {
+        setLocale();
+      };
+      var localizedStrings = {};
+      var localeEnStrings = {
+        myCloudServices: 'My Cloud Services',
+        title: 'Alexa Connection Successfull',
+        content1: 'Your My Cloud Home is now successfully connected with Alexa service.',
+        content2: 'You may close this page or continue with ',
+        myCloudHomeOnline: 'My Cloud Home Online.',
+      };
+
+      function setLocale() {
+        var locale = navigator.languages ? navigator.languages[0] : (navigator.language || navigator.userLanguage);
+        console.log('localizedStrings', localizedStrings);
+        if (locale === 'en' || locale.toUpperCase() === 'en-US'.toUpperCase() || locale.toUpperCase() === 'en-GB'.toUpperCase()){
+          localizedStrings = localeEnStrings;
+        } else if (locale === 'fr' || locale.toUpperCase() === 'fr-fr'.toUpperCase()){
+          localizedStrings = localeFrStrings;
+        } else if (locale === 'es' || locale.toUpperCase() === 'es-es'.toUpperCase()){
+          localizedStrings = localeESStrings;
+        } else if (locale === 'cs' || locale.toUpperCase() === 'cs-CZ'.toUpperCase()){
+          localizedStrings = localeCSStrings;
+        } else if (locale === 'da' || locale.toUpperCase() === 'da-DK'.toUpperCase()){
+          localizedStrings = localeDaStrings;
+        } else if (locale === 'de' || locale.toUpperCase() === 'de-DE'.toUpperCase()){
+          localizedStrings = localeDeStrings;
+        } else if (locale === 'el' || locale.toUpperCase() === 'el-GR'.toUpperCase()){
+          localizedStrings = localeElStrings;
+        } else if (locale === 'fi' || locale.toUpperCase() === 'fi-FI'.toUpperCase()){
+          localizedStrings = localeFiStrings;
+        } else if (locale === 'it' || locale.toUpperCase() === 'it-IT'.toUpperCase()){
+          localizedStrings = localeItStrings;
+        } else if (locale === 'ja' || locale.toUpperCase() === 'ja-JP'.toUpperCase()){
+          localizedStrings = localeJaStrings;
+        } else if (locale === 'ko' || locale.toUpperCase() === 'ko-KR'.toUpperCase()){
+          localizedStrings = localeKoStrings;
+        } else if (locale === 'nb' || locale.toUpperCase() === 'nb-NO'.toUpperCase()){
+          localizedStrings = localeNbStrings;
+        } else if (locale === 'nl' || locale.toUpperCase() === 'nl-NL'.toUpperCase()){
+          localizedStrings = localeNlStrings;
+        } else if (locale === 'pl' || locale.toUpperCase() === 'pl-PL'.toUpperCase()){
+          localizedStrings = localePlStrings;
+        } else if (locale === 'pt' || locale.toUpperCase() === 'pt-BR'.toUpperCase()){
+          localizedStrings = localePtStrings;
+        } else if (locale === 'sk' || locale.toUpperCase() === 'sk-SK'.toUpperCase()){
+          localizedStrings = localeSkStrings;
+        } else if (locale === 'sv' || locale.toUpperCase() === 'sv-SE'.toUpperCase()){
+          localizedStrings = localeSvStrings;
+        } else if (locale === 'tr' || locale.toUpperCase() === 'tr-TR'.toUpperCase()){
+          localizedStrings = localeTrStrings;
+        } else if (locale.toUpperCase() === 'zh-CN'.toUpperCase()){
+          localizedStrings = localeZhCnStrings;
+        } else if (locale.toUpperCase() === 'zh-TW'.toUpperCase()){
+          localizedStrings = localeZhTwStrings;
+        } else {
+          localizedStrings = localeEnStrings;
+        }
+      }
+    </script>
+
+</head>
+<body>
+    <div class="g-layout succes-page">
+        <div class="g-container">
+            <!--My cloud LOGO-->
+            <header>
+                <a class="mycloud-logo-text mobile">
+                    <script language="javascript">
+                      setLocale();
+                      document.write(localizedStrings.myCloudServices);
+                    </script>
+                </a>
+                <div class="mycloud-logo-container">
+                    <img class="mycloud-logo" src="./images/mycloudservices_logo.svg" alt="My Cloud Logo">
+                </div>
+                <div class="alexa-logo-container">
+                    <a href="#">
+                        <img class="alexa-logo" src="./images/alexa.svg" alt="Social Cloud Logo">
+                    </a>
+                </div>
+            </header>
+            <!--CONTENT-->
+            <main>
+                <h1 class="title"><script language="javascript">document.write(localizedStrings.title)</script></h1>
+                <p class="content"><script language="javascript">document.write(localizedStrings.content1)</script></p>
+                <div class="succes-image-block">
+                    <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" version="1.1" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd"
+                        viewBox="0 0 200 200"
+                         xmlns:xlink="http://www.w3.org/1999/xlink">
+                         <g id="Layer_x0020_1">
+                          <metadata id="d"/>
+                          <path fill="#5cba42" d="M100 0c55,0 100,45 100,100 0,55 -45,100 -100,100 -55,0 -100,-45 -100,-100 0,-55 45,-100 100,-100zm0 17c46,0 83,37 83,83 0,46 -37,83 -83,83 -46,0 -83,-37 -83,-83 0,-46 37,-83 83,-83z"/>
+                          <polygon id="checkmark" fill="#5cba42" points="83,136 50,103 65,87 91,113 147,56 162,72 91,144 "/>
+                         </g>
+                    </svg>
+                </div>
+                <p class="content"><script language="javascript">document.write(localizedStrings.content2)</script> <a href="#"><script language="javascript">document.write(localizedStrings.myCloudHomeOnline)</script></a></p>
+            </main>
+        </div>
+    </div>
+</body>
+</html>
+
